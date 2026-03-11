@@ -12,7 +12,7 @@ ______________________________________________________________________
 
 ## 0. Humanz
 
-This document is transpiled to Humans on three levels:
+This document is transpiled for Humanz on three levels:
 
 - Level 2: [Uninitiated](./human/unititiated/) - for the lay person.
 - Level 1: [Student](./human/students/) - for the Student of Hacking.
