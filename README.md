@@ -14,11 +14,12 @@ ______________________________________________________________________
 This is a Technical Standard. It is transpiled to Human Language with three
 tiers.
 
-- Hacker: Hackers read **this document**, unless they don't speak English, in
-  which case a language-only transpilation is available.
-- Student: Students are learning to be Hackers. This transpilation tells the
-  Why.
-- Layman: For non-technical Humanz.
+- Hacker: A direct translation of the technical document.
+- Student: A direct translation of the technical document with explanations on
+  the "whys".
+- Layman: A simplified translation for the non-technical.
+
+Below are these 3 levels in the 50 most popular languages on Earth.
 
 ### Hacker
 
@@ -73,7 +74,6 @@ tiers.
 - [Tiếng Việt (Vietnamese)](./README.hacker.vi.md)
 - [Yorùbá (Yoruba)](./README.hacker.yo.md)
 
-
 ### Student
 
 - [አማርኛ (Amharic)](./README.student.am.md)
@@ -127,7 +127,6 @@ tiers.
 - [اردو (Urdu)](./README.student.ur.md)
 - [Tiếng Việt (Vietnamese)](./README.student.vi.md)
 - [Yorùbá (Yoruba)](./README.student.yo.md)
-
 
 ### Layman
 
