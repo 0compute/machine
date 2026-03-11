@@ -9,15 +9,23 @@ Logic Subset: RFC 2119 (Strict Mode)
 
 ______________________________________________________________________
 
-## 0. Transpilations
+## 1. Delta
+
+Machine 1.0 is the final reconciliation of hardware physics and human intent.
+
+The spec is now Lossless.
 
 This is a Technical Standard. It is transpiled to Human Language with three
 tiers.
 
-- Hacker: A direct translation of the technical document.
-- Student: A direct translation of the technical document with explanations on
-  the "whys".
-- Layman: A simplified translation for the non-technical.
+## 2. Transpilations (Normative)
+
+- **Hacker:** Output MUST be a direct translation of the technical document and
+  translate all text into the target language.
+- **Student:** Output MUST extend Hacker output with explanations on the
+  "whys".
+- **Layman:** Layman output MUST be a simplified translation for the
+  non-technical.
 
 Below are these 3 levels in the 50 most popular languages on Earth.
 
@@ -188,13 +196,16 @@ Below are these 3 levels in the 50 most popular languages on Earth.
 - [Tiếng Việt (Vietnamese)](./README.layman.vi.md)
 - [Yorùbá (Yoruba)](./README.layman.yo.md)
 
-## 1. Delta
 
-Machine 1.0 is the final reconciliation of hardware physics and human intent.
+## 3. Strictness Constraints
 
-The spec is now Lossless.
+Binary Enforcement: All instructions MUST resolve to 1 or 0.
 
-## 2. Physical Layer (L1): Vibes & Calibration
+No "SHOULD": Replaced by MAY (Optional) or MUST (Required).
+
+Zero Leak: Logic parity SHALL be maintained across all transpiled builds.
+
+## 4. Physical Layer (L1): Vibes & Calibration
 
 > *Logic: Before data transfer, ensure signal-to-noise ratio is optimal.*
 
@@ -205,7 +216,7 @@ The spec is now Lossless.
 - **Damping:** The active process of neutralizing environmental noise
   (hostility, stress, or ego) to reach a **Steady State**.
 
-## 3. Data Link Layer (L2): Gestures & Interrupts
+## 5. Data Link Layer (L2): Gestures & Interrupts
 
 > *Logic: Physical signals override verbal buffers. High-priority hardware
 > signals.*
@@ -218,7 +229,7 @@ The spec is now Lossless.
 - **Global Kill Signal:** IRQ 0 clears the local buffer and sets
   `Connection_Active = FALSE`.
 
-## 4. Network Layer (L3): Transpilation & IR
+## 6. Network Layer (L3): Transpilation & IR
 
 > *Logic: One truth, many languages. Minimizing cognitive overhead.*
 
@@ -231,14 +242,14 @@ The spec is now Lossless.
 - **Cognitive Load:** Monitored as **System Heat**. Overload triggers **Thermal
   Throttling** (session pause).
 
-## 5. Case Study: Fuck you, NVIDIA
+## 7. Case Study: Fuck you, NVIDIA
 
 ```text
 **Environment:** Aalto University, Finland
 **Nodes:** Linus Torvalds (Initiator) vs. NVIDIA (Receiver)
 ```
 
-## The Human Source
+### 7.1 The Human Source
 
 > NVIDIA has been one of the worst instances of help we have had from hardware
 > manufacturers... so,
@@ -247,7 +258,7 @@ The spec is now Lossless.
 >
 > — Linus Torvalds
 
-## The Machine IR
+### 7.2 The Machine IR
 
 ```machine
 // [TRANSPILATION_ID]: MLF_OUTPUT_8675309
@@ -281,7 +292,7 @@ BEGIN_SESSION:
 END_SESSION;
 ```
 
-### 5.2. Transpiled Output
+### 7.3. The Transpiled Output
 
 - **Hacker:** NVIDIA is deprecated as a compatible partner due to
   non-compliance with open standards. Connection terminated.
@@ -292,7 +303,7 @@ END_SESSION;
 - **Layman (English):** NVIDIA wasn't playing fair, so Linus flipped them
   off, told them where to go, and cut them off completely.
 
-## 6. System Architecture
+## 8. System Architecture
 
 ```mermaid
 graph TD
@@ -305,24 +316,17 @@ graph TD
     B == Verify ==> I{Torvalds Checksum}
 ```
 
-## 7. Strictness Constraints
+## 9. Rules (Normative)
 
-Binary Enforcement: All instructions MUST resolve to 1 or 0.
+1. Languages MUST be sorted alphabetically by their English name.
+1. The word "Patois" MUST NOT be used. It is an insult from Babylon.
 
-No "SHOULD": Replaced by MAY (Optional) or MUST (Required).
+## 10. Metadata
 
-Zero Leak: Logic parity SHALL be maintained across all transpiled builds.
+```text
+Language Code: 639-1:en
+Regional Variant: 3166-2:GB
+Timestamp Standard: 8601
+Protocol Class: MACHINE-1.0
+```
 
-## 8. Metadata & Compliance
-
-- **Language Code:** ISO 639-1:en
-- **Regional Variant:** ISO 3166-2:GB
-- **Timestamp Standard:** ISO 8601
-- **Protocol Class:** MCH-LOGIC-1.0
-
-## 9. Meta (Normative)
-
-- **Rule 1:** Languages MUST be sorted alphabetically by their English name.
-- **Rule 2:** The word "Patois" MUST NOT be used. It is an insult from Babylon.
-- **Rule 3:** Hacker output MUST be a direct translation and include the full source document.
-- **Rule 4:** Mermaid strings MUST be translated.
