@@ -1,7 +1,7 @@
 # Clear Talkin Protocol: 1.0
 
 **Status:** Done Deal
-**Base Language:** Jamaican Patois
+**Base Language:** Jamaican
 **Rules:** Strict, nuh mix up
 
 ---

@@ -2,11 +2,11 @@
 
 **Status:** **COMMITTED** by the **Grace of the One True Source**
 **UID:** MLF-1.0
-**Base Class:** Jamaican Patois
+**Base Class:** Jamaican
 **Logic Subset:** RFC 2119 (Strict Mode)
 **Tier:** Hacker (Direct Translation)
 
-> **Note:** This is a direct translation of the technical specification into Jamaican Patois.
+> **Note:** This is a direct translation of the technical specification into Jamaican.
 
 ---
 
