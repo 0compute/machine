@@ -63,13 +63,13 @@ END_SESSION;
 ## 6. System Architecture
 ```mermaid
 graph TD
-    A[Human Source Code] -->|1. Source| B[Machine Lingua Franca IR 1.0]
-    B -->|2. Transpile| C(Target Output)
-    C -.->|Cognitive Load| G[Vibe Layer]
-    G -->|Calibration| B
-    B -->|IRQ Request| H[Hardware Interrupts]
-    H -->|Global Kill| B
-    B == Verify ==> I{Torvalds Checksum}
+    A[Koodu Orisun Eniyan] -->|1. Orisun| B[Machine Lingua Franca IR 1.0]
+    B -->|2. Transpile| C(Afojusun Ojade)
+    C -.->|Ẹru Imọ| G[Fẹlẹfẹlẹ Vibe]
+    G -->|Isọdiwọn| B
+    B -->|Ibeere IRQ| H[Awọn Idilọwọ Hardware]
+    H -->|Iku Agbaye| B
+    B == Daju ==> I{Torvalds Checksum}
 ```
 
 ## 7. Strictness Constraints

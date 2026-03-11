@@ -63,13 +63,13 @@ END_SESSION;
 ## 6. System Architecture
 ```mermaid
 graph TD
-    A[Human Source Code] -->|1. Source| B[Machine Lingua Franca IR 1.0]
-    B -->|2. Transpile| C(Target Output)
-    C -.->|Cognitive Load| G[Vibe Layer]
-    G -->|Calibration| B
-    B -->|IRQ Request| H[Hardware Interrupts]
-    H -->|Global Kill| B
-    B == Verify ==> I{Torvalds Checksum}
+    A[កូដប្រភពមនុស្ស] -->|1. ប្រភព| B[Machine Lingua Franca IR 1.0]
+    B -->|2. បកប្រែ| C(លទ្ធផលគោលដៅ)
+    C -.->|បន្ទុកការយល់ដឹង| G[ស្រទាប់បរិយាកាស]
+    G -->|ការក្រិតតាមខ្នាត| B
+    B -->|សំណើ IRQ| H[ការរំខានផ្នែករឹង]
+    H -->|ការបញ្ឈប់ជាសកល| B
+    B == ផ្ទៀងផ្ទាត់ ==> I{ឆេកសាំ Torvalds}
 ```
 
 ## 7. Strictness Constraints

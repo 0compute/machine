@@ -65,13 +65,13 @@ END_SESSION;
 
 ```mermaid
 graph TD
-    A[Human Source Code] -->|1. Source| B[Machine Lingua Franca IR 1.0]
-    B -->|2. Transpile| C(Target Output)
-    C -.->|Cognitive Load| G[Vibe Layer]
-    G -->|Calibration| B
-    B -->|IRQ Request| H[Hardware Interrupts]
-    H -->|Global Kill| B
-    B == Verify ==> I{Torvalds Checksum}
+    A[Menselijke Broncode] -->|1. Bron| B[Machine Lingua Franca IR 1.0]
+    B -->|2. Transpileren| C(Doeluitvoer)
+    C -.->|Cognitieve Belasting| G[Sfeerlaag]
+    G -->|Kalibratie| B
+    B -->|IRQ-verzoek| H[Hardware-interrupts]
+    H -->|Wereldwijde Stop| B
+    B == Verifiëren ==> I{Torvalds Checksum}
 ```
 
 ## 7. Strictness Constraints

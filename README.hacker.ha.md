@@ -65,13 +65,13 @@ END_SESSION;
 
 ```mermaid
 graph TD
-    A[Human Source Code] -->|1. Source| B[Machine Lingua Franca IR 1.0]
-    B -->|2. Transpile| C(Target Output)
-    C -.->|Cognitive Load| G[Vibe Layer]
-    G -->|Calibration| B
-    B -->|IRQ Request| H[Hardware Interrupts]
-    H -->|Global Kill| B
-    B == Verify ==> I{Torvalds Checksum}
+    A[Lambar Tushen Mutum] -->|1. Tushen| B[Machine Lingua Franca IR 1.0]
+    B -->|2. Transpile| C(Fitarwa Target)
+    C -.->|Nauyin Fahimi| G[Tushen Vibe]
+    G -->|Daidaitawa| B
+    B -->|Neman IRQ| H[Matsalolin Hardware]
+    H -->|Kisan Duniya| B
+    B == Tabbatar ==> I{Torvalds Checksum}
 ```
 
 ## 7. Strictness Constraints

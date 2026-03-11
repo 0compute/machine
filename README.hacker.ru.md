@@ -57,7 +57,7 @@ BEGIN_SESSION:
 END_SESSION;
 ```
 
-### 5.2. Transpiled Output
+### 5.2. Output Builds
 - **Technical:** "NVIDIA is deprecated as a compatible partner due to non-compliance with open standards. Connection terminated."
 - **Explanatory:** "NVIDIA nuh waan play fair. Linus just lif' up di finger, tell dem 'Gwan go s**k yuh madda,' and disconnect di whole link-up. Done talk."
 
@@ -65,13 +65,13 @@ END_SESSION;
 
 ```mermaid
 graph TD
-    A[Human Source Code] -->|1. Source| B[Machine Lingua Franca IR 1.0]
-    B -->|2. Transpile| C(Target Output)
-    C -.->|Cognitive Load| G[Vibe Layer]
-    G -->|Calibration| B
-    B -->|IRQ Request| H[Hardware Interrupts]
-    H -->|Global Kill| B
-    B == Verify ==> I{Torvalds Checksum}
+    A[Исходный код человека] -->|1. Источник| B[Machine Lingua Franca IR 1.0]
+    B -->|2. Транспилировать| C(Целевой вывод)
+    C -.->|Когнитивная нагрузка| G[Слой атмосферы]
+    G -->|Калибровка| B
+    B -->|Запрос IRQ| H[Аппаратные прерывания]
+    H -->|Глобальное завершение| B
+    B == Проверить ==> I{Контрольная сумма Торвальдса}
 ```
 
 ## 7. Strictness Constraints
