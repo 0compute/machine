@@ -15,7 +15,7 @@ ______________________________________________________________________
 This document is transpiled for Humanz on three levels:
 
 - Level 2: [Uninitiated](./human/unititiated/) - for the lay person.
-- Level 1: [Student](./human/students/) - for the Student of Hacking.
+- Level 1: [Student](./human/student/) - for the Student of Hacking.
 - Level 0: [Hacker](./human/hacker/) - for the Hacker.
 
 ## 1. Delta
