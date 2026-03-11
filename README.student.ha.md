@@ -43,9 +43,9 @@ Takaddun bayanai yanzu ba su da hasara.
 
 > NVIDIA has been one of the worst instances of help we have had from hardware
 > manufacturers... so,
->
+> 
 > Fuck you, NVIDIA.
->
+> 
 > — [Linus Torvalds](https://www.youtube.com/watch?v=Q4SWxWIOVBM)
 
 ### 5.2 Injin IR
@@ -92,13 +92,13 @@ END_SESSION;
 
 ```mermaid
 graph TD
-    A[Lambar Tushen Dan Adam] -->|1. Source| B[Juyawa]
-    B -->|2. Fitowar manufa| C(Vibe Layer)
-    C -.->|Load Fahimi: Ana Kula dashi azaman Zafin Tsarin. Yawan wuce gona da iri yana haifar da maƙarƙashiya ta thermal.| G[Daidaitawa]
-    G -->|Hardware Yana Katsewa| B
-    B -->|Kisan Duniya| H[Kisan Duniya]
-    H -->|Torvalds Checksum| B
-    B == Tabbatar ==> I{Ƙuntataccen Ƙuntatawa}
+    A[Lambar Tushen Dan Adam] -->|1. Source| B[Injin Lingua Franca IR 1.0]
+    B -->|2. Transpilation| C(Fitowar manufa)
+    C -.->|Load Fahimi: Ana Kula dashi azaman Zafin Tsarin. Yawan wuce gona da iri yana haifar da maƙarƙashiya ta thermal.| G[Vibe Layer]
+    G -->|Daidaitawa| B
+    B -->|Neman IRQ| H[Hardware Yana Katsewa]
+    H -->|Kisan Duniya| B
+    B == Tabbatar ==> I{Torvalds Checksum}
 ```
 
 ## 7. Ƙuntataccen Ƙuntatawa

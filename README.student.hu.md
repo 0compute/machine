@@ -43,9 +43,9 @@ A specifikáció most veszteségmentes.
 
 > NVIDIA has been one of the worst instances of help we have had from hardware
 > manufacturers... so,
->
+> 
 > Fuck you, NVIDIA.
->
+> 
 > — [Linus Torvalds](https://www.youtube.com/watch?v=Q4SWxWIOVBM)
 
 ### 5.2 A gép IR
@@ -92,13 +92,13 @@ END_SESSION;
 
 ```mermaid
 graph TD
-    A[Emberi forráskód] -->|1. Forrás| B[Transpile]
-    B -->|2. Tervszerű termelés| C(Vibe Layer)
-    C -.->|Kognitív terhelés: Rendszerhőként figyelik. A túlterhelés kiváltja a termikus fojtást.| G[Kalibráció]
-    G -->|Hardveres megszakítások| B
-    B -->|Global Kill| H[Global Kill]
-    H -->|Torvalds ellenőrző összeg| B
-    B == Ellenőrizze ==> I{Szigorúsági korlátok}
+    A[Emberi forráskód] -->|1. Forrás| B[Gép Lingua Franca IR 1.0]
+    B -->|2. Transzpiláció| C(Tervszerű termelés)
+    C -.->|Kognitív terhelés: Rendszerhőként figyelik. A túlterhelés kiváltja a termikus fojtást.| G[Vibe Layer]
+    G -->|Kalibráció| B
+    B -->|IRQ kérés| H[Hardveres megszakítások]
+    H -->|Global Kill| B
+    B == Ellenőrizze ==> I{Torvalds ellenőrző összeg}
 ```
 
 ## 7. Szigorúsági korlátok

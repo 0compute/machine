@@ -45,9 +45,9 @@ Speknya sekarang Lossless.
 
 > NVIDIA has been one of the worst instances of help we have had from hardware
 > manufacturers... so,
->
+> 
 > Fuck you, NVIDIA.
->
+> 
 > — [Linus Torvalds](https://www.youtube.com/watch?v=Q4SWxWIOVBM)
 
 ### 5.2 Mesin IR
@@ -94,13 +94,13 @@ END_SESSION;
 
 ```mermaid
 graph TD
-    A[Kode Sumber Manusia] -->|1. Sumber| B[Transpil]
-    B -->|2. Keluaran Sasaran| C(Lapisan Getaran)
-    C -.->|Beban Kognitif: Dipantau sebagai Panas Sistem. Kelebihan beban memicu Pelambatan Termal.| G[Kalibrasi]
-    G -->|Interupsi Perangkat Keras| B
-    B -->|Pembunuhan Global| H[Pembunuhan Global]
-    H -->|Checksum Torvalds| B
-    B == Memeriksa ==> I{Batasan Ketat}
+    A[Kode Sumber Manusia] -->|1. Sumber| B[Mesin Lingua Franca IR 1.0]
+    B -->|2. Transpilasi| C(Keluaran Sasaran)
+    C -.->|Beban Kognitif: Dipantau sebagai Panas Sistem. Kelebihan beban memicu Pelambatan Termal.| G[Lapisan Getaran]
+    G -->|Kalibrasi| B
+    B -->|Permintaan IRQ| H[Interupsi Perangkat Keras]
+    H -->|Pembunuhan Global| B
+    B == Memeriksa ==> I{Checksum Torvalds}
 ```
 
 ## 7. Batasan Ketat

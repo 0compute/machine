@@ -43,9 +43,9 @@
 
 > NVIDIA has been one of the worst instances of help we have had from hardware
 > manufacturers... so,
->
+> 
 > Fuck you, NVIDIA.
->
+> 
 > — [Linus Torvalds](https://www.youtube.com/watch?v=Q4SWxWIOVBM)
 
 ### 5.2 机器红外
@@ -92,13 +92,13 @@ END_SESSION;
 
 ```mermaid
 graph TD
-    A[人类源代码] -->|1. 来源| B[转译]
-    B -->|2. 目标输出| C(氛围层)
-    C -.->|认知负荷：作为系统热量进行监控。过载会触发热节流。| G[校准]
-    G -->|硬件中断| B
-    B -->|全球杀戮| H[全球杀戮]
-    H -->|托沃兹校验和| B
-    B == 核实 ==> I{严格约束}
+    A[人类源代码] -->|1. 来源| B[机器通用语言 IR 1.0]
+    B -->|2. 转译| C(目标输出)
+    C -.->|认知负荷：作为系统热量进行监控。过载会触发热节流。| G[氛围层]
+    G -->|校准| B
+    B -->|中断请求| H[硬件中断]
+    H -->|全球杀戮| B
+    B == 核实 ==> I{托沃兹校验和}
 ```
 
 ## 7. 严格约束

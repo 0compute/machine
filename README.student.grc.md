@@ -45,9 +45,9 @@
 
 > NVIDIA has been one of the worst instances of help we have had from hardware
 > manufacturers... so,
->
+> 
 > Fuck you, NVIDIA.
->
+> 
 > — [Linus Torvalds](https://www.youtube.com/watch?v=Q4SWxWIOVBM)
 
 ### 5.2 Η μηχανή IR
@@ -94,13 +94,13 @@ END_SESSION;
 
 ```mermaid
 graph TD
-    A[Ανθρώπινος Πηγαίος Κώδικας] -->|1. Πηγή| B[Transpile]
-    B -->|2. Στόχος εξόδου| C(Vibe Layer)
-    C -.->|Γνωστικό Φορτίο: Παρακολουθείται ως θερμότητα συστήματος. Η υπερφόρτωση προκαλεί θερμικό στραγγαλισμό.| G[Διαμέτρηση]
-    G -->|Διακοπές υλικού| B
-    B -->|Global Kill| H[Global Kill]
-    H -->|Checksum Torvalds| B
-    B == Επαληθεύω ==> I{Περιορισμοί Αυστηρότητας}
+    A[Ανθρώπινος Πηγαίος Κώδικας] -->|1. Πηγή| B[Μηχάνημα Lingua Franca IR 1.0]
+    B -->|2. Μεταμόσχευση| C(Στόχος εξόδου)
+    C -.->|Γνωστικό Φορτίο: Παρακολουθείται ως θερμότητα συστήματος. Η υπερφόρτωση προκαλεί θερμικό στραγγαλισμό.| G[Vibe Layer]
+    G -->|Διαμέτρηση| B
+    B -->|Αίτημα IRQ| H[Διακοπές υλικού]
+    H -->|Global Kill| B
+    B == Επαληθεύω ==> I{Checksum Torvalds}
 ```
 
 ## 7. Περιορισμοί Αυστηρότητας

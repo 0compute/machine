@@ -43,9 +43,9 @@ Le specifiche ora sono Lossless.
 
 > NVIDIA has been one of the worst instances of help we have had from hardware
 > manufacturers... so,
->
+> 
 > Fuck you, NVIDIA.
->
+> 
 > — [Linus Torvalds](https://www.youtube.com/watch?v=Q4SWxWIOVBM)
 
 ### 5.2 La Macchina IR
@@ -92,13 +92,13 @@ END_SESSION;
 
 ```mermaid
 graph TD
-    A[Codice sorgente umano] -->|1. Fonte| B[Transpilare]
-    B -->|2. Uscita obiettivo| C(Strato di vibrazione)
-    C -.->|Carico cognitivo: monitorato come calore del sistema. Il sovraccarico attiva la limitazione termica.| G[Calibrazione]
-    G -->|Interruzioni hardware| B
-    B -->|Uccisione globale| H[Uccisione globale]
-    H -->|Checksum di Torvald| B
-    B == Verificare ==> I{Vincoli di rigore}
+    A[Codice sorgente umano] -->|1. Fonte| B[Macchina Lingua Franca IR 1.0]
+    B -->|2. Trascrizione| C(Uscita obiettivo)
+    C -.->|Carico cognitivo: monitorato come calore del sistema. Il sovraccarico attiva la limitazione termica.| G[Strato di vibrazione]
+    G -->|Calibrazione| B
+    B -->|Richiesta IRQ| H[Interruzioni hardware]
+    H -->|Uccisione globale| B
+    B == Verificare ==> I{Checksum di Torvald}
 ```
 
 ## 7. Vincoli di rigore

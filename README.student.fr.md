@@ -43,9 +43,9 @@ La spécification est désormais sans perte.
 
 > NVIDIA has been one of the worst instances of help we have had from hardware
 > manufacturers... so,
->
+> 
 > Fuck you, NVIDIA.
->
+> 
 > — [Linus Torvalds](https://www.youtube.com/watch?v=Q4SWxWIOVBM)
 
 ### 5.2 La Machine IR
@@ -92,13 +92,13 @@ END_SESSION;
 
 ```mermaid
 graph TD
-    A[Code source humain] -->|1. Source| B[Transpiler]
-    B -->|2. Sortie cible| C(Couche d'ambiance)
-    C -.->|Charge cognitive : surveillée en tant que chaleur du système. La surcharge déclenche une limitation thermique.| G[Étalonnage]
-    G -->|Interruptions matérielles| B
-    B -->|Tuerie mondiale| H[Tuerie mondiale]
-    H -->|Somme de contrôle de Torvalds| B
-    B == Vérifier ==> I{Contraintes de rigueur}
+    A[Code source humain] -->|1. Source| B[Machine Lingua Franca IR 1.0]
+    B -->|2. Transpilation| C(Sortie cible)
+    C -.->|Charge cognitive : surveillée en tant que chaleur du système. La surcharge déclenche une limitation thermique.| G[Couche d'ambiance]
+    G -->|Étalonnage| B
+    B -->|Demande d'IRQ| H[Interruptions matérielles]
+    H -->|Tuerie mondiale| B
+    B == Vérifier ==> I{Somme de contrôle de Torvalds}
 ```
 
 ## 7. Contraintes de rigueur

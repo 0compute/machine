@@ -2,7 +2,7 @@
 
 **Status:** **COMMITTED** by the **Grace of the One True Source**
 **UID:** MLF-1.0
-**Base Class:** ភាសាខ្មែរ (Khmer)
+**Base Class:** ភាសាខ្មែຣ (Khmer)
 **Logic Subset:** RFC 2119 (Strict Mode)
 **Tier:** Hacker (Direct Translation)
 
@@ -43,9 +43,9 @@
 
 > NVIDIA has been one of the worst instances of help we have had from hardware
 > manufacturers... so,
->
+> 
 > Fuck you, NVIDIA.
->
+> 
 > — [Linus Torvalds](https://www.youtube.com/watch?v=Q4SWxWIOVBM)
 
 ### 5.2 ម៉ាស៊ីន IR
@@ -92,13 +92,13 @@ END_SESSION;
 
 ```mermaid
 graph TD
-    A[កូដប្រភពមនុស្ស] -->|1. ប្រភព| B[ឆ្លង]
-    B -->|2. លទ្ធផលគោលដៅ| C(ស្រទាប់ Vibe)
-    C -.->|ការផ្ទុកការយល់ដឹង៖ ត្រូវបានត្រួតពិនិត្យជាកំដៅប្រព័ន្ធ។ ការផ្ទុកលើសទម្ងន់បង្កឱ្យមានការបិទបាំងកំដៅ។| G[ការក្រិតតាមខ្នាត]
-    G -->|ការរំខានផ្នែករឹង| B
-    B -->|ការសម្លាប់សកល| H[ការសម្លាប់សកល]
-    H -->|Torvalds Checksum| B
-    B == ផ្ទៀងផ្ទាត់ ==> I{ការរឹតត្បិតភាពតឹងរ៉ឹង}
+    A[កូដប្រភពមនុស្ស] -->|1. ប្រភព| B[ម៉ាស៊ីន Lingua Franca IR 1.0]
+    B -->|2. ការចម្លងរោគ| C(លទ្ធផលគោលដៅ)
+    C -.->|ការផ្ទុកការយល់ដឹង៖ ត្រូវបានត្រួតពិនិត្យជាកំដៅប្រព័ន្ធ។ ការផ្ទុកលើសទម្ងន់បង្កឱ្យមានការបិទបាំងកំដៅ។| G[ស្រទាប់ Vibe]
+    G -->|ការក្រិតតាមខ្នាត| B
+    B -->|សំណើ IRQ| H[ការរំខានផ្នែករឹង]
+    H -->|ការសម្លាប់សកល| B
+    B == ផ្ទៀងផ្ទាត់ ==> I{Torvalds Checksum}
 ```
 
 ## 7. ការរឹតត្បិតភាពតឹងរ៉ឹង

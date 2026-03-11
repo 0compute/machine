@@ -43,9 +43,9 @@ Tekniset tiedot ovat nyt häviötön.
 
 > NVIDIA has been one of the worst instances of help we have had from hardware
 > manufacturers... so,
->
+> 
 > Fuck you, NVIDIA.
->
+> 
 > — [Linus Torvalds](https://www.youtube.com/watch?v=Q4SWxWIOVBM)
 
 ### 5.2 Koneen IR
@@ -92,13 +92,13 @@ END_SESSION;
 
 ```mermaid
 graph TD
-    A[Ihmisen lähdekoodi] -->|1. Lähde| B[Transpiloi]
-    B -->|2. Tavoitelähtö| C(Vibe-kerros)
-    C -.->|Kognitiivinen kuormitus: Seurataan järjestelmän lämpönä. Ylikuormitus laukaisee lämpökuristuksen.| G[Kalibrointi]
-    G -->|Laitteisto keskeyttää| B
-    B -->|Globaali tappo| H[Globaali tappo]
-    H -->|Torvaldsin tarkistussumma| B
-    B == Vahvista ==> I{Tiukkuusrajoitukset}
+    A[Ihmisen lähdekoodi] -->|1. Lähde| B[Kone Lingua Franca IR 1.0]
+    B -->|2. Transpilaatio| C(Tavoitelähtö)
+    C -.->|Kognitiivinen kuormitus: Seurataan järjestelmän lämpönä. Ylikuormitus laukaisee lämpökuristuksen.| G[Vibe-kerros]
+    G -->|Kalibrointi| B
+    B -->|IRQ-pyyntö| H[Laitteisto keskeyttää]
+    H -->|Globaali tappo| B
+    B == Vahvista ==> I{Torvaldsin tarkistussumma}
 ```
 
 ## 7. Tiukkuusrajoitukset

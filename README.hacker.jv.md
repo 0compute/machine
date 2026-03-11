@@ -43,9 +43,9 @@ Spec saiki Lossless.
 
 > NVIDIA has been one of the worst instances of help we have had from hardware
 > manufacturers... so,
->
+> 
 > Fuck you, NVIDIA.
->
+> 
 > — [Linus Torvalds](https://www.youtube.com/watch?v=Q4SWxWIOVBM)
 
 ### 5.2 Mesin IR
@@ -92,13 +92,13 @@ END_SESSION;
 
 ```mermaid
 graph TD
-    A[Kode Sumber Manungsa] -->|1. Sumber| B[Transpile]
-    B -->|2. Output Target| C(Lapisan Vibe)
-    C -.->|Beban Kognitif: Dipantau minangka Sistem Panas. Kakehan micu Thermal Throttling.| G[Kalibrasi]
-    G -->|Gangguan Hardware| B
-    B -->|Global Kill| H[Global Kill]
-    H -->|Torvalds Checksum| B
-    B == Verifikasi ==> I{Watesan Strictness}
+    A[Kode Sumber Manungsa] -->|1. Sumber| B[Mesin Lingua Franca IR 1.0]
+    B -->|2. Transpilasi| C(Output Target)
+    C -.->|Beban Kognitif: Dipantau minangka Sistem Panas. Kakehan micu Thermal Throttling.| G[Lapisan Vibe]
+    G -->|Kalibrasi| B
+    B -->|Panjaluk IRQ| H[Gangguan Hardware]
+    H -->|Global Kill| B
+    B == Verifikasi ==> I{Torvalds Checksum}
 ```
 
 ## 7. Watesan Strictness

@@ -43,9 +43,9 @@
 
 > NVIDIA has been one of the worst instances of help we have had from hardware
 > manufacturers... so,
->
+> 
 > Fuck you, NVIDIA.
->
+> 
 > — [Linus Torvalds](https://www.youtube.com/watch?v=Q4SWxWIOVBM)
 
 ### 5.2 ማሽኑ IR
@@ -92,13 +92,13 @@ END_SESSION;
 
 ```mermaid
 graph TD
-    A[የሰው ምንጭ ኮድ] -->|1. ምንጭ| B[መተላለፍ]
-    B -->|2. የዒላማ ውፅዓት| C(Vibe Layer)
-    C -.->|የእውቀት (ኮግኒቲቭ) ጭነት፡ እንደ ስርዓት ሙቀት ክትትል የሚደረግበት። ከመጠን በላይ መጫን የሙቀት መጨናነቅን ያነሳሳል።| G[መለካት]
-    G -->|ሃርድዌር ይቋረጣል| B
-    B -->|ዓለም አቀፍ ግድያ| H[ዓለም አቀፍ ግድያ]
-    H -->|ቶርቫልድስ ቼክሰም| B
-    B == አረጋግጥ ==> I{ጥብቅነት ገደቦች}
+    A[የሰው ምንጭ ኮድ] -->|1. ምንጭ| B[ማሽን ቋንቋ ፍራንካ IR 1.0]
+    B -->|2. ሽግግር| C(የዒላማ ውፅዓት)
+    C -.->|የእውቀት (ኮግኒቲቭ) ጭነት፡ እንደ ስርዓት ሙቀት ክትትል የሚደረግበት። ከመጠን በላይ መጫን የሙቀት መጨናነቅን ያነሳሳል።| G[Vibe Layer]
+    G -->|መለካት| B
+    B -->|የIRQ ጥያቄ| H[ሃርድዌር ይቋረጣል]
+    H -->|ዓለም አቀፍ ግድያ| B
+    B == አረጋግጥ ==> I{ቶርቫልድስ ቼክሰም}
 ```
 
 ## 7. ጥብቅነት ገደቦች

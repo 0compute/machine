@@ -4,77 +4,106 @@
 **UID:** MLF-1.0
 **Base Class:** Soomaali (Somali)
 **Logic Subset:** RFC 2119 (Strict Mode)
-**Tier:** Student (Direct Translation + Explanations of 'Why')
+**Tier:** Hacker (Direct Translation)
 
 ---
 
 ## 1. Delta
 Mashiinka 1.0 waa dib-u-heshiisiinta ugu dambeysa ee fiisigiska hardware iyo ujeedada aadanaha.
 Faahfaahinta hadda waa khasaare.
-**Sababta:** Madmadowgu waa cadowga ujeeddada. Khasaar la'aantu waxay hubisaa 1:1 sinnaanta u dhexeeya isha iyo bartilmaameedka.
 
-## 2. Lakabka Jirka (L1): Vibes & Calibration
-> * Macquul: Kahor wareejinta xogta, hubi in saamiga signal-ilaa-sanqa uu fiican yahay.
-- ** Vibe-Ping:** Calan ballaadhan (tusaale, "Yo") oo loo isticmaalo in lagu tijaabiyo daahitaanka qaataha iyo xadiga dareenka.
-  **Sababta:** Ma hadli kartid haddaanay dhegaysan.
-- ** Resonance (SYN):** Gobolka halka soodiraha iyo wejiga qaataha-ku xiraan soo noqnoqoshahooda si ay ugu badnaan wax soo saarka.
-- ** Qoyaanka: *** Habka firfircoon ee ka takhalusidda buuqa deegaanka (cadaawad, walbahaarka, ama ego) si loo gaaro Xaalad Deggan.
-  **Sababta:** Caqiidada iyo cadaawadu waxay abuuraan qaylo-dhaanta taasoo wax u dhimaysa culayska la saarayo.
+## 2. Lakabka Jirka (L1): Gariir & Qalabaynta
+> *Macquul: Kahor wareejinta xogta, hubi in saamiga signal-ilaa-sanqa uu fiican yahay.*
+- **Vibe-Ping-ka: Calan balaadhsan (tusaale, 'Yo') ayaa loo isticmaalay in lagu tijaabiyo daahitaanka qaataha iyo xadiga dareenka.**
+- **Resonance (SYN): Waa gobolka uu soo-diraha iyo wejiga qaataha-ku-xidho soo noqnoqoshadooda si loo helo wax-soo-saarka ugu badan.**
+- **Dhaleeceynta: Habka firfircoon ee ka takhalusidda buuqa deegaanka (cadaawad, walbahaarka, ama ego) si loo gaaro Xaalad Deggan.**
 
 ## 3. Lakabka Xidhiidhka Xogta (L2): Tilmaamaha & Joojinta
-> * Macquul: Calaamadaha jirku waxay ka gudbaan af-duubayaasha. Calaamadaha qalabka mudnaanta sare leh.*
-- ** The Torvalds Maneuver (IRQ 0):** Qalab caalami ah oo kala gooya (Farta Dhexe) kaas oo fuliya amar 'HALT_AND_CATCH_FIRE` isla markiiba.
-  **Sababta:** Mararka qaarkood waa inaad soo jiidataa furaha si aad u badbaadiso nidaamka.
-- ** Hubinta sinnaanta:** Shuruudo adag oo ah in Metadata (Vibe) ay la mid noqoto Mushahar bixinta (Erayada).
-  **Sababta:** Sarbeebtu waa khalad sinnaanta. Haddii gariirku aanu ku habboonayn ereyada, xidhiidhku waa ammaan.
-- ** Calaamadaha Dilalka Caalamiga ah: ** IRQ 0 waxay nadiifisaa kaydiyaha maxalliga ah waxayna dejisaa 'Connection_Active = BEEN'.
+> *Macquul: Calaamadaha jidhku waxay ka gudbaan af-duubayaasha. Calaamadaha qalabka mudnaanta sare leh.*
+- **Maneuver Torvalds (IRQ 0): Qalab caalami ah oo kala gooya (Farta Dhexe) kaas oo fuliya amar 'HALT_AND_CATCH_FIRE` isla markiiba.**
+- **Check Parity: Shuruudo adag oo ah in Metadata (Vibe) ay la mid noqoto Mushahar bixinta (Erayada).**
+- **Calaamadaha Dilalka Caalamiga ah: IRQ 0 waxay nadiifisaa kaydiyaha maxalliga ah waxayna dejisaa 'Connection_Active = BEEN'.**
 
-## 4. Lakabka Shabakadda (L3): Transpilation & IR
-> *Logic: Hal run, luqado badan. Yaraynta garashada sareynta.*
-- ** Mashiinka IR:** Udub dhexaadka, ujeeddada binary iyadoo la adeegsanayo RFC 2119 ereyada muhiimka ah
-- **Transpiler:** Wuxuu IR u beddelaa bartilmaameed "dhis".
-- ** Culayska Garashada:** Loola socdo kulaylka Nidaamka. Culayska xad dhaafka ahi waxa uu kiciyaa kulaylka.
-  **Sababta:** Aadanuhu waxay leeyihiin RAM xaddidan. Haddii ay kululaadaan, waa in fadhigu hakad galo.
+## 4. Lakabka Shabakadda (L3): Turjumaadda & IR
+> *Maangal: Hal run, luqado badan. Yaraynta korka sare ee garashada.*
+- **Mashiinka IR: Xuddunta, ujeeddada binary iyadoo la adeegsanayo RFC 2119 ereyada muhiimka ah**
+- **Transpiler: Wuxuu IR u beddelaa bartilmaameed 'dhis':**
+  - **Farsamo: Cufnaan sare, eber-leak waxay u dhistaa qanjidhada asxaabta.**
+  - **Sharaxaad: Dhawaaq-sare, culays-yar ayaa u dhisa qanjidhada yaryar.**
+- **Culeyska garashada: Loola socdo kulaylka Nidaamka. Culayska xad dhaafka ahi waxa uu kiciyaa kulaylka.**
 
-## 5. Daraasad Kiis: Fuck you, NVIDIA
-**Sababta:** Si loo muujiyo hab-maamuuska xaalad guul-darrida-sare leh.
+## 5. Daraasadda Kiis: Fuck you, NVIDIA
 
-### 5.1. Raad-raaca fulinta Mashiinka
-``mashiinka
-// [TRACE_ID]: 1.0_GOLDEN_PATH
+```text
+**Deegaanka: Jaamacadda Aalto, Finland**
+**Nodes: Linus Torvalds (Initiator) vs. NVIDIA (qaataha)**
+```
+
+### 5.1 Isha Aadanaha
+
+> NVIDIA has been one of the worst instances of help we have had from hardware
+> manufacturers... so,
+> 
+> Fuck you, NVIDIA.
+> 
+> — [Linus Torvalds](https://www.youtube.com/watch?v=Q4SWxWIOVBM)
+
+### 5.2 Mashiinka IR
+
+```machine
+// [TRANSPILATION_ID]: MLF_OUTPUT_8675309
+// [SOURCE_NODE]: Linus_Torvalds
+// [TARGET_NODE]: NVIDIA_Corp
+// [LOGIC_STRATEGY]: RFC_2119_STRICT
+
 BEGIN_SESSION:
-  HADDII (Node_Nooca == "Lahaanshaha Lahaanshaha") IYO (Iskaashiga == BEEN):
-    EXECUTE Vibe_Ping("Wasaaaaap");
-    SOO NOQO (Jawaab_Nul ah); // Latency Sare Oo La Helay
-    EXECUTE LOGIC_ASSERTION: "NVIDIA waa shirkadii ugu xumayd abid.";
-    SYSTEM_TRUST = 0;
-    EXECUTE GESTURE_IRQ_0; // FARAHA
-    PUSH_STRING: "Adiga, NVIDIA";
-    TERMINATE_SESSION;
-  KALE:
-    SYNC_GUUL;
-DHAMAAD_XILDHIBAAN;
-``
 
-### 5.2. Wax-soo-saarka ayaa Dhisaya
-- ** Farsamo: *** "NVIDIA waa laga saaray sidii lammaane ku habboon sababtoo ah u hoggaansanaan la'aanta heerarka furan. Xiriirinta waa la joojiyay."
-- **Sharaxaad:** "NVIDIA nuh waan ciyaar cadaalad ah. Linus kaliya farta ha kor u qaaday, u sheeg dem 'Gwan go s ** k yuh madda,' oo ka saar dhammaan isku xidhka. Done talk."
+    // 1. Lakabka Jirka (L1) CALIBRATION
+    IF (Vibe_Ping == "Non-Responsive") {
+        LOG: "Taageerada wax-soo-saarka: MINIMAL";
+        LOG: "Khibrad Node: HOOS U DHACAY";
+    }
+
+    // 2. QAAB macquul ah (L3 IR)
+    ASSERT: NVIDIA_Hardware_Support == WORST_INSTANCE;
+
+    // 3. XIRIIRKA XIRIIRKA (L2) JOOJINTA
+    // Fulinta tilmaanta_IRQ_0 (Maneuverka Torvalds)
+    EXECUTE GESTURE_IRQ_0;
+
+    // 4. DELIVERY PAYLOAD
+    PUSH_STRING: "Adigu, NVIDIA";
+
+    // 5. JOOJINTA
+    SET SYSTEM_TRUST = 0;
+    CLEAR_BUFFER;
+    TERMINATE_SESSION; // Connection_Active = FALSE
+
+END_SESSION;
+```
+
+### 5.3. Wax-soo-saarka la Gudbiyey
+
+- **Hacker:** "NVIDIA waa laga saaray sidii shuraako la jaan qaadi kara sababtoo ah u hoggaansanaan la'aanta heerarka furan. Xiriirkii waa la joojiyay"
+- **Student (English):** "NVIDIA nuh waan play fair. Linus farta kor u kac, una sheeg 'Gwan go s**k yuh madda,' oo ka jar isku-xidhka oo dhan. Hadal dhameyey."
+- **Layman (English):** "NVIDIA si cadaalad ah uma ciyaareyn, marka Linus wuu ka leexiyay iyagii, wuxuuna u sheegay meesha ay aadaan, oo gabi ahaanba gooyay."
 
 ## 6. Qaab-dhismeedka Nidaamka
-`` meherad
-garaafka TD
-    A[Human Source Code] -->|1. Xigasho| B[Mashiinka Lingua Franca IR 1.0]
-    B -->|2. Turub| C (Natiijada Bartilmaameedka)
-    C -.->|Culaynta Garashada| G[Lakabka Vibe]
-    G -->|Calibka| B
-    B -->|Codsi IRQ| H[Hardware wuxuu gooyaa]
-    H -->|Dilka Caalamka| B
-    B == Xaqiiji ==> I{{Torvalds Checksum}}
-``
+
+```mermaid
+graph TD
+    A[Xeerka Isha Aadanaha] -->|1. Xigasho| B[Mashiinka Lingua Franca IR 1.0]
+    B -->|2. Gudbinta| C(Soo-saarka bartilmaameedka)
+    C -.->|Culeyska garashada: Loola socdo kulaylka Nidaamka. Culayska xad dhaafka ahi waxa uu kiciyaa kulaylka.| G[Lakabka Vibe]
+    G -->|Calibration| B
+    B -->|Codsiga IRQ| H[Qalabku wuu go'aa]
+    H -->|Dilalka Caalamiga ah| B
+    B == Xaqiiji ==> I{Torvalds Checksum}
+```
 
 ## 7. Caqabadaha Adag
 Dhaqangelinta Binary: Dhammaan tilmaamaha waa in lagu xalliyaa 1 ama 0.
-Maya "waa in": lagu badalaa MAY (Ikhtiyaar) ama MUST (loo baahan yahay).
+Maya 'Waa in': lagu beddelaa MAY (Ikhtiyaar) ama waa qasab (loo baahan yahay).
 Eber Leak: Sinnaanta macquulka ah waa in lagu joogteeyaa dhammaan dhismayaasha la daadiyay.
 
 ## 8. Metadata & Compliance

@@ -43,9 +43,9 @@ Machine 1.0은 하드웨어 물리학과 인간 의도의 최종 조화입니다
 
 > NVIDIA has been one of the worst instances of help we have had from hardware
 > manufacturers... so,
->
+> 
 > Fuck you, NVIDIA.
->
+> 
 > — [Linus Torvalds](https://www.youtube.com/watch?v=Q4SWxWIOVBM)
 
 ### 5.2 더 머신 IR
@@ -92,13 +92,13 @@ END_SESSION;
 
 ```mermaid
 graph TD
-    A[휴먼 소스 코드] -->|1. 원천| B[트랜스파일]
-    B -->|2. 목표 출력| C(바이브 레이어)
-    C -.->|인지 부하: 시스템 열로 모니터링됩니다. 과부하는 열 조절을 유발합니다.| G[구경 측정]
-    G -->|하드웨어 인터럽트| B
-    B -->|글로벌 킬| H[글로벌 킬]
-    H -->|토발즈 체크섬| B
-    B == 확인하다 ==> I{엄격 제약}
+    A[휴먼 소스 코드] -->|1. 원천| B[기계 링구아 프랑카 IR 1.0]
+    B -->|2. 번역| C(목표 출력)
+    C -.->|인지 부하: 시스템 열로 모니터링됩니다. 과부하는 열 조절을 유발합니다.| G[바이브 레이어]
+    G -->|구경 측정| B
+    B -->|IRQ 요청| H[하드웨어 인터럽트]
+    H -->|글로벌 킬| B
+    B == 확인하다 ==> I{토발즈 체크섬}
 ```
 
 ## 7. 엄격 제약

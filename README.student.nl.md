@@ -45,9 +45,9 @@ De specificatie is nu Lossless.
 
 > NVIDIA has been one of the worst instances of help we have had from hardware
 > manufacturers... so,
->
+> 
 > Fuck you, NVIDIA.
->
+> 
 > — [Linus Torvalds](https://www.youtube.com/watch?v=Q4SWxWIOVBM)
 
 ### 5.2 De Machine-IR
@@ -94,13 +94,13 @@ END_SESSION;
 
 ```mermaid
 graph TD
-    A[Menselijke broncode] -->|1. Bron| B[Transpileren]
-    B -->|2. Doeluitvoer| C(Vibe-laag)
-    C -.->|Cognitieve belasting: bewaakt als systeemwarmte. Overbelasting veroorzaakt thermische throttling.| G[Kalibratie]
-    G -->|Hardware-onderbrekingen| B
-    B -->|Mondiale moord| H[Mondiale moord]
-    H -->|Torvalds controlesom| B
-    B == Verifiëren ==> I{Striktheidsbeperkingen}
+    A[Menselijke broncode] -->|1. Bron| B[Machinelingua Franca IR 1.0]
+    B -->|2. Transpilatie| C(Doeluitvoer)
+    C -.->|Cognitieve belasting: bewaakt als systeemwarmte. Overbelasting veroorzaakt thermische throttling.| G[Vibe-laag]
+    G -->|Kalibratie| B
+    B -->|IRQ-verzoek| H[Hardware-onderbrekingen]
+    H -->|Mondiale moord| B
+    B == Verifiëren ==> I{Torvalds controlesom}
 ```
 
 ## 7. Striktheidsbeperkingen

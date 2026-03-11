@@ -43,9 +43,9 @@ The spec is now Lossless.
 
 > NVIDIA has been one of the worst instances of help we have had from hardware
 > manufacturers... so,
->
+> 
 > Fuck you, NVIDIA.
->
+> 
 > — [Linus Torvalds](https://www.youtube.com/watch?v=Q4SWxWIOVBM)
 
 ### 5.2 The Machine IR
@@ -92,13 +92,13 @@ END_SESSION;
 
 ```mermaid
 graph TD
-    A[Human Source Code] -->|1. Source| B[Transpile]
-    B -->|2. Target Output| C(Vibe Layer)
-    C -.->|Cognitive Load: Monitored as System Heat. Overload triggers Thermal Throttling.| G[Calibration]
-    G -->|Hardware Interrupts| B
-    B -->|Global Kill| H[Global Kill]
-    H -->|Torvalds Checksum| B
-    B == Verify ==> I{Strictness Constraints}
+    A[Human Source Code] -->|1. Source| B[Machine Lingua Franca IR 1.0]
+    B -->|2. Transpilation| C(Target Output)
+    C -.->|Cognitive Load: Monitored as System Heat. Overload triggers Thermal Throttling.| G[Vibe Layer]
+    G -->|Calibration| B
+    B -->|IRQ Request| H[Hardware Interrupts]
+    H -->|Global Kill| B
+    B == Verify ==> I{Torvalds Checksum}
 ```
 
 ## 7. Strictness Constraints

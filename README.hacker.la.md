@@ -43,9 +43,9 @@ Nunc est spec- Lossless.
 
 > NVIDIA has been one of the worst instances of help we have had from hardware
 > manufacturers... so,
->
+> 
 > Fuck you, NVIDIA.
->
+> 
 > — [Linus Torvalds](https://www.youtube.com/watch?v=Q4SWxWIOVBM)
 
 ### 5.2 Apparatus IR
@@ -92,13 +92,13 @@ END_SESSION;
 
 ```mermaid
 graph TD
-    A[Humanum Source Code] -->|1. Source| B[Transpile]
-    B -->|2. scopum output| C(Vibe Layer)
-    C -.->|Lond cognitiva: Monitored ut Ratio Caloris. Felis Scelerisque throttling ONERO.| G[Calibration]
-    G -->|Hardware obloquitur| B
-    B -->|Global Kill| H[Global Kill]
-    H -->|Torvalds Checksum| B
-    B == Quin ==> I{Strictness angustiis}
+    A[Humanum Source Code] -->|1. Source| B[Machina Lingua Franca IR 1.0]
+    B -->|2. Transpilation| C(scopum output)
+    C -.->|Lond cognitiva: Monitored ut Ratio Caloris. Felis Scelerisque throttling ONERO.| G[Vibe Layer]
+    G -->|Calibration| B
+    B -->|IRQ Request| H[Hardware obloquitur]
+    H -->|Global Kill| B
+    B == Quin ==> I{Torvalds Checksum}
 ```
 
 ## 7. Strictness angustiis

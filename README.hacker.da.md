@@ -43,9 +43,9 @@ Specifikationen er nu Lossless.
 
 > NVIDIA has been one of the worst instances of help we have had from hardware
 > manufacturers... so,
->
+> 
 > Fuck you, NVIDIA.
->
+> 
 > — [Linus Torvalds](https://www.youtube.com/watch?v=Q4SWxWIOVBM)
 
 ### 5.2 Maskinen IR
@@ -92,13 +92,13 @@ END_SESSION;
 
 ```mermaid
 graph TD
-    A[Menneskelig kildekode] -->|1. Kilde| B[Transpilér]
-    B -->|2. Måloutput| C(Vibe lag)
-    C -.->|Kognitiv belastning: Overvåges som systemvarme. Overbelastning udløser termisk drosling.| G[Kalibrering]
-    G -->|Hardwareafbrydelser| B
-    B -->|Globalt dræb| H[Globalt dræb]
-    H -->|Torvalds Checksum| B
-    B == Verificere ==> I{Strenge restriktioner}
+    A[Menneskelig kildekode] -->|1. Kilde| B[Machine Lingua Franca IR 1.0]
+    B -->|2. Transpilation| C(Måloutput)
+    C -.->|Kognitiv belastning: Overvåges som systemvarme. Overbelastning udløser termisk drosling.| G[Vibe lag]
+    G -->|Kalibrering| B
+    B -->|IRQ-anmodning| H[Hardwareafbrydelser]
+    H -->|Globalt dræb| B
+    B == Verificere ==> I{Torvalds Checksum}
 ```
 
 ## 7. Strenge restriktioner

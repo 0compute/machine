@@ -44,9 +44,9 @@ L'especificació ara és sense pèrdues.
 
 > NVIDIA has been one of the worst instances of help we have had from hardware
 > manufacturers... so,
->
+> 
 > Fuck you, NVIDIA.
->
+> 
 > — [Linus Torvalds](https://www.youtube.com/watch?v=Q4SWxWIOVBM)
 
 ### 5.2 La màquina IR
@@ -93,13 +93,13 @@ END_SESSION;
 
 ```mermaid
 graph TD
-    A[Codi font humà] -->|1. Font| B[Transpilar]
-    B -->|2. Sortida objectiu| C(Capa de vibració)
-    C -.->|Càrrega cognitiva: monitoritzada com a calor del sistema. La sobrecàrrega provoca l'acceleració tèrmica.| G[Calibració]
-    G -->|Interrupcions de maquinari| B
-    B -->|Global Kill| H[Global Kill]
-    H -->|Suma de control de Torvalds| B
-    B == Verificar ==> I{Limitacions de rigor}
+    A[Codi font humà] -->|1. Font| B[Machine Lingua Franca IR 1.0]
+    B -->|2. Transpilació| C(Sortida objectiu)
+    C -.->|Càrrega cognitiva: monitoritzada com a calor del sistema. La sobrecàrrega provoca l'acceleració tèrmica.| G[Capa de vibració]
+    G -->|Calibració| B
+    B -->|Sol·licitud d'IRQ| H[Interrupcions de maquinari]
+    H -->|Global Kill| B
+    B == Verificar ==> I{Suma de control de Torvalds}
 ```
 
 ## 7. Limitacions de rigor

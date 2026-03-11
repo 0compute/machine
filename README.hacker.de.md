@@ -43,9 +43,9 @@ Die Spezifikation ist jetzt verlustfrei.
 
 > NVIDIA has been one of the worst instances of help we have had from hardware
 > manufacturers... so,
->
+> 
 > Fuck you, NVIDIA.
->
+> 
 > — [Linus Torvalds](https://www.youtube.com/watch?v=Q4SWxWIOVBM)
 
 ### 5.2 Die Maschinen-IR
@@ -92,13 +92,13 @@ END_SESSION;
 
 ```mermaid
 graph TD
-    A[Menschlicher Quellcode] -->|1. Quelle| B[Transpile]
-    B -->|2. Zielausgabe| C(Vibe-Ebene)
-    C -.->|Kognitive Belastung: Überwacht als Systemwärme. Überlast löst thermische Drosselung aus.| G[Kalibrierung]
-    G -->|Hardware-Interrupts| B
-    B -->|Globaler Kill| H[Globaler Kill]
-    H -->|Torvalds-Prüfsumme| B
-    B == Verifizieren ==> I{Strenge Einschränkungen}
+    A[Menschlicher Quellcode] -->|1. Quelle| B[Machine Lingua Franca IR 1.0]
+    B -->|2. Transpilation| C(Zielausgabe)
+    C -.->|Kognitive Belastung: Überwacht als Systemwärme. Überlast löst thermische Drosselung aus.| G[Vibe-Ebene]
+    G -->|Kalibrierung| B
+    B -->|IRQ-Anfrage| H[Hardware-Interrupts]
+    H -->|Globaler Kill| B
+    B == Verifizieren ==> I{Torvalds-Prüfsumme}
 ```
 
 ## 7. Strenge Einschränkungen

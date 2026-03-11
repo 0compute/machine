@@ -44,9 +44,9 @@ Specifikace je nyní Lossless.
 
 > NVIDIA has been one of the worst instances of help we have had from hardware
 > manufacturers... so,
->
+> 
 > Fuck you, NVIDIA.
->
+> 
 > — [Linus Torvalds](https://www.youtube.com/watch?v=Q4SWxWIOVBM)
 
 ### 5.2 Stroj IR
@@ -93,13 +93,13 @@ END_SESSION;
 
 ```mermaid
 graph TD
-    A[Lidský zdrojový kód] -->|1. Zdroj| B[Transpile]
-    B -->|2. Cílový výstup| C(Vibe vrstva)
-    C -.->|Kognitivní zátěž: Monitorováno jako systémové teplo. Přetížení spouští tepelné škrcení.| G[Kalibrace]
-    G -->|Hardwarová přerušení| B
-    B -->|Globální zabíjení| H[Globální zabíjení]
-    H -->|Torvaldův kontrolní součet| B
-    B == Ověřte ==> I{Omezení přísnosti}
+    A[Lidský zdrojový kód] -->|1. Zdroj| B[Stroj Lingua Franca IR 1.0]
+    B -->|2. Transpilace| C(Cílový výstup)
+    C -.->|Kognitivní zátěž: Monitorováno jako systémové teplo. Přetížení spouští tepelné škrcení.| G[Vibe vrstva]
+    G -->|Kalibrace| B
+    B -->|Žádost o IRQ| H[Hardwarová přerušení]
+    H -->|Globální zabíjení| B
+    B == Ověřte ==> I{Torvaldův kontrolní součet}
 ```
 
 ## 7. Omezení přísnosti

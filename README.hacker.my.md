@@ -43,9 +43,9 @@ Spec သည် ယခုအခါ Lossless ဖြစ်သည်။
 
 > NVIDIA has been one of the worst instances of help we have had from hardware
 > manufacturers... so,
->
+> 
 > Fuck you, NVIDIA.
->
+> 
 > — [Linus Torvalds](https://www.youtube.com/watch?v=Q4SWxWIOVBM)
 
 ### 5.2 စက် IR
@@ -92,13 +92,13 @@ END_SESSION;
 
 ```mermaid
 graph TD
-    A[လူ့အရင်းအမြစ်ကုဒ်] -->|1. အရင်းအမြစ်| B[Transpile]
-    B -->|2. ပစ်မှတ် Output| C(Vibe Layer)
-    C -.->|သိမှုဝန်- စနစ်အပူအဖြစ် စောင့်ကြည့်သည်။ Overload သည် Thermal Throttling ကို အစပျိုးသည်။| G[အိမ်မြောင်]
-    G -->|ဟာ့ဒ်ဝဲ အနှောင့်အယှက်များ| B
-    B -->|ကမ္ဘာလုံးဆိုင်ရာသတ်| H[ကမ္ဘာလုံးဆိုင်ရာသတ်]
-    H -->|Torvalds Checksum| B
-    B == စိစစ်ပါ။ ==> I{တင်းကျပ်မှု ကန့်သတ်ချက်များ}
+    A[လူ့အရင်းအမြစ်ကုဒ်] -->|1. အရင်းအမြစ်| B[စက် Lingua Franca IR 1.0]
+    B -->|2. Transpilation| C(ပစ်မှတ် Output)
+    C -.->|သိမှုဝန်- စနစ်အပူအဖြစ် စောင့်ကြည့်သည်။ Overload သည် Thermal Throttling ကို အစပျိုးသည်။| G[Vibe Layer]
+    G -->|အိမ်မြောင်| B
+    B -->|IRQ တောင်းဆိုချက်| H[ဟာ့ဒ်ဝဲ အနှောင့်အယှက်များ]
+    H -->|ကမ္ဘာလုံးဆိုင်ရာသတ်| B
+    B == စိစစ်ပါ။ ==> I{Torvalds Checksum}
 ```
 
 ## 7. တင်းကျပ်မှု ကန့်သတ်ချက်များ
