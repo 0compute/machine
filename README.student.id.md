@@ -4,77 +4,108 @@
 **UID:** MLF-1.0
 **Base Class:** Bahasa Indonesia (Indonesian)
 **Logic Subset:** RFC 2119 (Strict Mode)
-**Tier:** Student (Direct Translation + Explanations of 'Why')
+**Tier:** Hacker (Direct Translation)
 
 ---
 
 ## 1. Delta
 Mesin 1.0 adalah rekonsiliasi akhir antara fisika perangkat keras dan niat manusia.
 Speknya sekarang Lossless.
-* **Mengapa:** Ambiguitas adalah musuh niat. Lossless memastikan keseimbangan 1:1 antara sumber dan target.
+* **Why:** Ambiguitas adalah musuh niat. Lossless memastikan keseimbangan 1:1 antara sumber dan target.
 
 ## 2. Lapisan Fisik (L1): Getaran & Kalibrasi
 > *Logika: Sebelum transfer data, pastikan rasio signal-to-noise optimal.*
-- **The Vibe-Ping:** Sinyal spektrum luas (misalnya, "Yo") yang digunakan untuk menguji latensi penerima dan bandwidth emosional.
-  * **Mengapa:** Anda tidak dapat berbicara jika mereka tidak mendengarkan.
-- **Resonansi (SYN):** Keadaan saat pengirim dan penerima mengunci fase frekuensinya untuk throughput maksimum.
-- **Damping:** Proses aktif menetralisir kebisingan lingkungan (permusuhan, stres, atau ego) untuk mencapai Keadaan Stabil.
-  * **Mengapa:** Ego dan permusuhan menciptakan gangguan sinyal yang merusak muatan.
+- **Vibe-Ping: Sinyal spektrum luas (misalnya, 'Yo') yang digunakan untuk menguji latensi penerima dan bandwidth emosional.**
+- **Resonansi (SYN): Keadaan di mana pengirim dan penerima mengunci fase frekuensinya untuk throughput maksimum.**
+- **Redaman: Proses aktif menetralkan kebisingan lingkungan (permusuhan, stres, atau ego) untuk mencapai Keadaan Stabil.**
 
-## 3. Lapisan Data Link (L2): Gerakan & Interupsi
+## 3. Lapisan Data Link (L2): Gestur & Interupsi
 > *Logika: Sinyal fisik mengesampingkan buffer verbal. Sinyal perangkat keras prioritas tinggi.*
-- **Manuver Torvalds (IRQ 0):** Interupsi perangkat keras global (Jari Tengah) yang langsung mengeksekusi perintah `HALT_AND_CATCH_FIRE`.
-  * **Mengapa:** Terkadang Anda hanya perlu mencabut stekernya untuk menyelamatkan sistem.
-- **Pemeriksaan Paritas:** Persyaratan ketat agar Metadata (Vibe) cocok dengan Payload (Words).
-  * **Mengapa:** Sarkasme adalah kesalahan paritas. Jika getarannya tidak sesuai dengan kata-katanya, koneksinya tidak aman.
-- **Global Kill Signal:** IRQ 0 menghapus buffer lokal dan menyetel `Connection_Active = FALSE`.
+- **Manuver Torvalds (IRQ 0): Interupsi perangkat keras global (Jari Tengah) yang langsung mengeksekusi perintah `HALT_AND_CATCH_FIRE`.**
+- **Pemeriksaan Paritas: Persyaratan ketat agar Metadata (Vibe) cocok dengan Payload (Words).
+  * **Why:** Sarkasme adalah kesalahan paritas. Jika getarannya tidak sesuai dengan kata-katanya, koneksinya tidak aman.**
+- **Sinyal Pembunuhan Global: IRQ 0 menghapus buffer lokal dan menyetel `Connection_Active = FALSE`.**
 
 ## 4. Lapisan Jaringan (L3): Transpilasi & IR
 > *Logika: Satu kebenaran, banyak bahasa. Meminimalkan overhead kognitif.*
-- **Mesin IR:** Inti, maksud biner menggunakan kata kunci RFC 2119 (**HARUS, TIDAK HARUS, MUNGKIN**).
-- **Transpiler:** Mengubah IR menjadi target "Builds".
-- **Beban Kognitif:** Dipantau sebagai Panas Sistem. Kelebihan beban memicu Pelambatan Termal.
-  * **Mengapa:** Manusia memiliki RAM yang terbatas. Jika terlalu panas, sesi HARUS dijeda.
+- **IR Mesin: Inti, maksud biner menggunakan kata kunci RFC 2119 (**HARUS, TIDAK HARUS, MUNGKIN**).**
+- **Transpiler: Mengubah IR menjadi 'Builds' target:**
+  - **Teknis: Pembuatan dengan kepadatan tinggi dan tanpa kebocoran untuk node rekan.**
+  - **Penjelasan: Build dengan resonansi tinggi dan beban rendah untuk node junior.**
+- **Beban Kognitif: Dipantau sebagai Panas Sistem. Kelebihan beban memicu Pelambatan Termal.**
 
 ## 5. Studi Kasus: Persetan, NVIDIA
-* **Mengapa:** Untuk mendemonstrasikan protokol dalam kondisi kegagalan dengan tekanan tinggi.
 
-### 5.1. Jejak Eksekusi Mesin
-```mesin
-// [TRACE_ID]: 1.0_GOLDEN_PATH
+```text
+**Lingkungan: Universitas Aalto, Finlandia**
+**Node: Linus Torvalds (Inisiator) vs. NVIDIA (Penerima)**
+```
+
+### 5.1 Sumber Manusia
+
+> NVIDIA has been one of the worst instances of help we have had from hardware
+> manufacturers... so,
+>
+> Fuck you, NVIDIA.
+>
+> — [Linus Torvalds](https://www.youtube.com/watch?v=Q4SWxWIOVBM)
+
+### 5.2 Mesin IR
+
+```machine
+// [TRANSPILATION_ID]: MLF_OUTPUT_8675309
+// [SOURCE_NODE]: Linus_Torvalds
+// [TARGET_NODE]: NVIDIA_Corp
+// [LOGIC_STRATEGY]: RFC_2119_STRICT
+
 BEGIN_SESSION:
-  IF (Node_Type == "Kepemilikan") AND (Kerjasama == FALSE):
-    JALANKAN Vibe_Ping("Wasaaaaap");
-    KEMBALI (Null_Response); // Latensi Tinggi Terdeteksi
-    EXECUTE LOGIC_ASSERTION: "NVIDIA adalah perusahaan terburuk yang pernah ada.";
-    SETEL SYSTEM_TRUST = 0;
-    JALANKAN GESTURE_IRQ_0; // JARI
-    PUSH_STRING: "Persetan, NVIDIA";
-    TERMINATE_SESSION;
-  LAINNYA:
-    SYNC_SUCCESS;
+
+    // 1. KALIBRASI LAPISAN FISIK (L1).
+    IF (Vibe_Ping == "Non-Responsive") {
+        LOG: "Dukungan Pabrikan: MINIMAL";
+        LOG: "Pengalaman Node: TERDEGRADASI";
+    }
+
+    // 2. ASSERSI LOGIKA (L3 IR)
+    ASSERT: NVIDIA_Hardware_Support == WORST_INSTANCE;
+
+    // 3. GANGGUAN LAPISAN DATA LINK (L2).
+    // Menjalankan Gesture_IRQ_0 (Manuver Torvalds)
+    EXECUTE GESTURE_IRQ_0;
+
+    // 4. PENGIRIMAN PAYLOAD (BANGUNAN TRANSPILASI: TECHNICAL_LEAK)
+    PUSH_STRING: "Persetan denganmu, NVIDIA";
+
+    // 5. PENGHENTIAN
+    SET SYSTEM_TRUST = 0;
+    CLEAR_BUFFER;
+    TERMINATE_SESSION; // Connection_Active = FALSE
+
 END_SESSION;
 ```
 
-### 5.2. Peningkatan Keluaran
-- **Teknis:** "NVIDIA tidak lagi digunakan sebagai mitra yang kompatibel karena ketidakpatuhan terhadap standar terbuka. Koneksi dihentikan."
-- **Penjelasan:** "NVIDIA nuh waan play fair. Linus cukup angkat jari, beri tahu mereka 'Gwan go s**k yuh madda,' dan putuskan seluruh tautan. Selesai bicara."
+### 5.3. Output yang Ditranspilasi
+
+- **Hacker:** "NVIDIA tidak lagi digunakan sebagai mitra yang kompatibel karena ketidakpatuhan terhadap standar terbuka. Koneksi dihentikan."
+- **Student (English):** "NVIDIA nuh waan bermain adil. Linus hanya mengangkat jarinya, katakan pada mereka 'Gwan go s**k yuh madda,' dan putuskan seluruh tautan. Selesai bicara."
+- **Layman (English):** "NVIDIA tidak bermain adil, jadi Linus mematikannya, memberi tahu mereka ke mana harus pergi, dan memutusnya sepenuhnya."
 
 ## 6. Arsitektur Sistem
-```putri duyung
-grafik TD
-    A[Kode Sumber Manusia] -->|1. Sumber| B[Mesin Lingua Franca IR 1.0]
-    B -->|2. Transpil| C (Target Keluaran)
-    C -.->|Beban Kognitif| G[Lapisan Getaran]
-    G -->|Kalibrasi| B
-    B -->|Permintaan IRQ| H[Interupsi Perangkat Keras]
-    H -->|Pembunuhan Global| B
-    B == Verifikasi ==> I{{Torvalds Checksum}}
+
+```mermaid
+graph TD
+    A[Kode Sumber Manusia] -->|1. Sumber| B[Transpil]
+    B -->|2. Keluaran Sasaran| C(Lapisan Getaran)
+    C -.->|Beban Kognitif: Dipantau sebagai Panas Sistem. Kelebihan beban memicu Pelambatan Termal.| G[Kalibrasi]
+    G -->|Interupsi Perangkat Keras| B
+    B -->|Pembunuhan Global| H[Pembunuhan Global]
+    H -->|Checksum Torvalds| B
+    B == Memeriksa ==> I{Batasan Ketat}
 ```
 
 ## 7. Batasan Ketat
 Penegakan Biner: Semua instruksi HARUS diselesaikan ke 1 atau 0.
-Tidak ada "HARUS": Diganti dengan MUNGKIN (Opsional) atau HARUS (Wajib).
+Tidak ada 'HARUS': Diganti dengan MUNGKIN (Opsional) atau HARUS (Wajib).
 Kebocoran Nol: Paritas logika HARUS dipertahankan di semua bangunan yang ditranspilasi.
 
 ## 8. Metadata & Compliance

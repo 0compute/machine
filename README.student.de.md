@@ -4,73 +4,102 @@
 **UID:** MLF-1.0
 **Base Class:** Deutsch (German)
 **Logic Subset:** RFC 2119 (Strict Mode)
-**Tier:** Student (Direct Translation + Explanations of 'Why')
+**Tier:** Hacker (Direct Translation)
 
 ---
 
 ## 1. Delta
 Maschine 1.0 ist die endgültige Versöhnung von Hardwarephysik und menschlicher Absicht.
 Die Spezifikation ist jetzt verlustfrei.
-* **Warum:** Mehrdeutigkeit ist der Feind der Absicht. Lossless gewährleistet eine 1:1-Parität zwischen Quelle und Ziel.
 
 ## 2. Physikalische Schicht (L1): Schwingungen und Kalibrierung
 > *Logik: Stellen Sie vor der Datenübertragung sicher, dass das Signal-Rausch-Verhältnis optimal ist.*
-- **Der Vibe-Ping:** Ein Breitbandsignal (z. B. „Yo“), das zum Testen der Empfängerlatenz und der emotionalen Bandbreite verwendet wird.
-  * **Warum:** Sie können nicht sprechen, wenn sie nicht zuhören.
-- **Resonanz (SYN):** Der Zustand, in dem Sender und Empfänger ihre Frequenzen für maximalen Durchsatz phasensynchronisieren.
-- **Dämpfung:** Der aktive Prozess der Neutralisierung von Umgebungsgeräuschen (Feindseligkeit, Stress oder Ego), um einen stabilen Zustand zu erreichen.
-  * **Warum:** Ego und Feindseligkeit erzeugen Signalrauschen, das die Nutzlast beeinträchtigt.
+- **Der Vibe-Ping: Ein Breitbandsignal (z. B. „Yo“), das zum Testen der Empfängerlatenz und der emotionalen Bandbreite verwendet wird.**
+- **Resonanz (SYN): Der Zustand, in dem Sender und Empfänger ihre Frequenzen phasensynchronisieren, um maximalen Durchsatz zu erzielen.**
+- **Dämpfung: Der aktive Prozess der Neutralisierung von Umgebungsgeräuschen (Feindseligkeit, Stress oder Ego), um einen stabilen Zustand zu erreichen.**
 
 ## 3. Datenverbindungsschicht (L2): Gesten und Unterbrechungen
-> *Logik: Physische Signale haben Vorrang vor verbalen Puffern. Hardwaresignale mit hoher Priorität.*
-- **Das Torvalds-Manöver (IRQ 0):** Ein globaler Hardware-Interrupt (Der Mittelfinger), der einen sofortigen „HALT_AND_CATCH_FIRE“-Befehl ausführt.
-  * **Warum:** Manchmal muss man einfach den Stecker ziehen, um das System zu retten.
-- **Paritätsprüfung:** Strenge Anforderung, dass Metadaten (Vibe) mit der Nutzlast (Wörter) übereinstimmen.
-  * **Warum:** Sarkasmus ist ein Paritätsfehler. Wenn die Stimmung nicht zu den Worten passt, ist die Verbindung unsicher.
-- **Global Kill Signal:** IRQ 0 löscht den lokalen Puffer und setzt „Connection_Active = FALSE“.
+> *Logik: Physische Signale setzen verbale Puffer außer Kraft. Hardwaresignale mit hoher Priorität.*
+- **Das Torvalds-Manöver (IRQ 0): Ein globaler Hardware-Interrupt (Der Mittelfinger), der einen sofortigen „HALT_AND_CATCH_FIRE“-Befehl ausführt.**
+- **Paritätsprüfung: Strenge Anforderung, dass Metadaten (Vibe) mit der Nutzlast (Wörter) übereinstimmen.**
+- **Globales Kill-Signal: IRQ 0 löscht den lokalen Puffer und setzt „Connection_Active = FALSE“.**
 
-## 4. Netzwerkschicht (L3): Transpilation & IR
+## 4. Netzwerkschicht (L3): Transpilation und IR
 > *Logik: Eine Wahrheit, viele Sprachen. Minimierung des kognitiven Overheads.*
-- **Maschinen-IR:** Die Kern-Binärabsicht unter Verwendung von RFC 2119-Schlüsselwörtern (**MUSS, DÜRFEN NICHT, DÜRFEN**).
-- **Transpiler:** Wandelt die IR in Ziel-„Builds“ um.
-- **Kognitive Belastung:** Wird als Systemwärme überwacht. Überlast löst thermische Drosselung aus.
-  * **Warum:** Menschen haben nur begrenzten Arbeitsspeicher. Bei Überhitzung MUSS die Sitzung unterbrochen werden.
+- **Maschinen-IR: Der Kern, binäre Absicht mit RFC 2119-Schlüsselwörtern („MUSS, DÜRFEN NICHT, DANN**).**
+- **Transpiler: Wandelt die IR in Ziel-Builds um:**
+  - **Technisch: High-Density-Builds ohne Lecks für Peer-Knoten.**
+  - **Erläuterung: Hochresonante Builds mit geringer Last für Junior-Knoten.**
+- **Kognitive Belastung: Überwacht als Systemwärme. Überlast löst thermische Drosselung aus.**
 
 ## 5. Fallstudie: Scheiß auf dich, NVIDIA
-* **Warum:** Zur Demonstration des Protokolls in einem Ausfallzustand mit hoher Belastung.
 
-### 5.1. Der Maschinenausführungs-Trace
-„Maschine
-// [TRACE_ID]: 1.0_GOLDEN_PATH
+```text
+**Umwelt: Aalto-Universität, Finnland**
+**Knoten: Linus Torvalds (Initiator) vs. NVIDIA (Empfänger)**
+```
+
+### 5.1 Die menschliche Quelle
+
+> NVIDIA has been one of the worst instances of help we have had from hardware
+> manufacturers... so,
+>
+> Fuck you, NVIDIA.
+>
+> — [Linus Torvalds](https://www.youtube.com/watch?v=Q4SWxWIOVBM)
+
+### 5.2 Die Maschinen-IR
+
+```machine
+// [TRANSPILATION_ID]: MLF_OUTPUT_8675309
+// [SOURCE_NODE]: Linus_Torvalds
+// [TARGET_NODE]: NVIDIA_Corp
+// [LOGIC_STRATEGY]: RFC_2119_STRICT
+
 BEGIN_SESSION:
-  IF (Node_Type == "Proprietary") AND (Cooperation == FALSE):
-    EXECUTE Vibe_Ping("Wasaaaaap");
-    RETURN (Null_Response); // Hohe Latenz erkannt
-    EXECUTE LOGIC_ASSERTION: „NVIDIA ist das schlechteste Unternehmen aller Zeiten.“;
-    SET SYSTEM_TRUST = 0;
-    EXECUTE GESTURE_IRQ_0; // DER FINGER
-    PUSH_STRING: „Fick dich, NVIDIA“;
-    TERMINATE_SESSION;
-  SONST:
-    SYNC_SUCCESS;
-END_SESSION;
-„
 
-### 5.2. Ausgabe-Builds
-- **Technisch:** „NVIDIA wird aufgrund der Nichteinhaltung offener Standards nicht mehr als kompatibler Partner empfohlen. Verbindung beendet.“
-- **Erläuterung:** „NVIDIA will sich nicht fair verhalten. Linus hat einfach den Finger hochgehoben, ihm gesagt: ‚Gwan, scheiß auf dich, Madda‘ und trenne die gesamte Verbindung. Fertig geredet.“
+    // 1. KALIBRIERUNG DER PHYSIKALISCHEN SCHICHT (L1).
+    IF (Vibe_Ping == "Non-Responsive") {
+        LOG: "Herstellerunterstützung: MINIMAL";
+        LOG: "Knotenerfahrung: DEGRADED";
+    }
+
+    // 2. LOGISCHE BEHAUPTUNG (L3 IR)
+    ASSERT: NVIDIA_Hardware_Support == WORST_INSTANCE;
+
+    // 3. UNTERBRECHUNG DER DATENVERBINDUNGSEBENE (L2).
+    // Ausführen von Gesture_IRQ_0 (Das Torvalds-Manöver)
+    EXECUTE GESTURE_IRQ_0;
+
+    // 4. NUTZLASTLIEFERUNG (TRANSPILATION BUILD: TECHNICAL_LEAK)
+    PUSH_STRING: "Scheiß auf dich, NVIDIA";
+
+    // 5. BEENDIGUNG
+    SET SYSTEM_TRUST = 0;
+    CLEAR_BUFFER;
+    TERMINATE_SESSION; // Connection_Active = FALSE
+
+END_SESSION;
+```
+
+### 5.3. Die transpilierte Ausgabe
+
+- **Hacker:** "NVIDIA gilt aufgrund der Nichteinhaltung offener Standards nicht mehr als kompatibler Partner. Verbindung beendet."
+- **Student (English):** "NVIDIA will nicht fair spielen. Linus hob einfach den Finger, sagte ihm: „Gwan, scheiß auf dich, Madda“ und trennte die gesamte Verbindung. Fertig geredet."
+- **Layman (English):** "NVIDIA spielte nicht fair, also schaltete Linus sie aus, sagte ihnen, wohin sie gehen sollten, und unterbrach sie vollständig."
 
 ## 6. Systemarchitektur
-„Meerjungfrau
-Diagramm TD
-    A[Human Source Code] ->|1. Quelle| B[Machine Lingua Franca IR 1.0]
-    B -->|2. Transpile| C (Zielausgabe)
-    C -.->|Kognitive Belastung| G[Vibe-Ebene]
-    G -->|Kalibrierung| B
-    B -->|IRQ-Anfrage| H[Hardware-Interrupts]
-    H -->|Global Kill| B
-    B == Verify ==> I{{Torvalds Checksum}}
-„
+
+```mermaid
+graph TD
+    A[Menschlicher Quellcode] -->|1. Quelle| B[Transpile]
+    B -->|2. Zielausgabe| C(Vibe-Ebene)
+    C -.->|Kognitive Belastung: Überwacht als Systemwärme. Überlast löst thermische Drosselung aus.| G[Kalibrierung]
+    G -->|Hardware-Interrupts| B
+    B -->|Globaler Kill| H[Globaler Kill]
+    H -->|Torvalds-Prüfsumme| B
+    B == Verifizieren ==> I{Strenge Einschränkungen}
+```
 
 ## 7. Strenge Einschränkungen
 Binärerzwingung: Alle Anweisungen MÜSSEN in 1 oder 0 aufgelöst werden.
