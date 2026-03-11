@@ -1,34 +1,82 @@
 # [ARCHIVE_COMMIT] Machine Lingua Franca: 1.0 (PROD)
 
-**Status:** **COMMITTED** by the **Grace of the One True Source** **UID:**
-MLF-1.0 **Base Class:** UK English (Language of Arthur) **Logic Subset:** RFC
-2119 (Strict Mode)
+```text
+Status: COMMITTED by the Grace of the One True Source
+UID: MLF-1.0
+Base Class: UK English (Language of Arthur)
+Logic Subset: RFC 2119 (Strict Mode)
+```
 
 ______________________________________________________________________
 
 ## 0. Transpilations
 
-- [Layman - Arabic](./README.layman.ar.md)
-- [Layman - Bengali](./README.layman.bn.md)
-- [Layman - Chinese](./README.layman.zh.md)
-- [Layman - English](./README.layman.en.md)
-- [Layman - French](./README.layman.fr.md)
-- [Layman - German](./README.layman.de.md)
-- [Layman - Hindi](./README.layman.hi.md)
-- [Layman - Indonesian](./README.layman.id.md)
-- [Layman - Italian](./README.layman.it.md)
-- [Layman - Jamaican](./README.layman.jam.md)
-- [Layman - Japanese](./README.layman.ja.md)
-- [Layman - Korean](./README.layman.ko.md)
-- [Layman - Polish](./README.layman.pl.md)
-- [Layman - Portuguese](./README.layman.pt.md)
-- [Layman - Russian](./README.layman.ru.md)
-- [Layman - Spanish](./README.layman.es.md)
-- [Layman - Swahili](./README.layman.sw.md)
-- [Layman - Thai](./README.layman.th.md)
-- [Layman - Turkish](./README.layman.tr.md)
-- [Layman - Urdu](./README.layman.ur.md)
-- [Layman - Vietnamese](./README.layman.vi.md)
+This is a Technical Standard. It is transpiled to Human Language with three
+tiers.
+
+- Hacker: Hackers read **this document**, unless they don't speak English, in
+  which case a language-only transpilation is available.
+- Student: Students are learning to be Hackers. This transpilation tells the
+  Why.
+- Layman: For non-technical Humanz.
+
+### Hacker
+
+### Student
+
+### Layman
+
+- [አማርኛ (Amharic)](./README.layman.am.md)
+- [العربية (Arabic)](./README.layman.ar.md)
+- [বাংলা (Bengali)](./README.layman.bn.md)
+- [မြန်မာဘာသာ (Burmese)](./README.layman.my.md)
+- [Català (Catalan)](./README.layman.ca.md)
+- [中文 (Chinese)](./README.layman.zh.md)
+- [Čeština (Czech)](./README.layman.cs.md)
+- [Dansk (Danish)](./README.layman.da.md)
+- [Nederlands (Dutch)](./README.layman.nl.md)
+- [English](./README.layman.en.md)
+- [Suomi (Finnish)](./README.layman.fi.md)
+- [Français (French)](./README.layman.fr.md)
+- [Deutsch (German)](./README.layman.de.md)
+- [Ελληνικά (Greek)](./README.layman.el.md)
+- [ગુજરાતી (Gujarati)](./README.layman.gu.md)
+- [Hausa](./README.layman.ha.md)
+- [עברית (Hebrew)](./README.layman.he.md)
+- [हिन्दी (Hindi)](./README.layman.hi.md)
+- [Magyar (Hungarian)](./README.layman.hu.md)
+- [Bahasa Indonesia (Indonesian)](./README.layman.id.md)
+- [Italiano (Italian)](./README.layman.it.md)
+- [Jamaican Patois](./README.layman.jam.md)
+- [日本語 (Japanese)](./README.layman.ja.md)
+- [Basa Jawa (Javanese)](./README.layman.jv.md)
+- [ಕನ್ನಡ (Kannada)](./README.layman.kn.md)
+- [ភាសាខ្មែរ (Khmer)](./README.layman.km.md)
+- [한국어 (Korean)](./README.layman.ko.md)
+- [മലയാളം (Malayalam)](./README.layman.ml.md)
+- [मराठी (Marathi)](./README.layman.mr.md)
+- [नेपाली (Nepali)](./README.layman.ne.md)
+- [Norsk (Norwegian)](./README.layman.no.md)
+- [فارسی (Persian)](./README.layman.fa.md)
+- [Polski (Polish)](./README.layman.pl.md)
+- [Português (Portuguese)](./README.layman.pt.md)
+- [ਪੰਜਾਬੀ (Punjabi)](./README.layman.pa.md)
+- [Română (Romanian)](./README.layman.ro.md)
+- [Русский (Russian)](./README.layman.ru.md)
+- [සිංහල (Sinhala)](./README.layman.si.md)
+- [Soomaali (Somali)](./README.layman.so.md)
+- [Español (Spanish)](./README.layman.es.md)
+- [Kiswahili (Swahili)](./README.layman.sw.md)
+- [Svenska (Swedish)](./README.layman.sv.md)
+- [Tagalog](./README.layman.tl.md)
+- [தமிழ் (Tamil)](./README.layman.ta.md)
+- [తెలుగు (Telugu)](./README.layman.te.md)
+- [ไทย (Thai)](./README.layman.th.md)
+- [Türkçe (Turkish)](./README.layman.tr.md)
+- [Українська (Ukrainian)](./README.layman.uk.md)
+- [اردو (Urdu)](./README.layman.ur.md)
+- [Tiếng Việt (Vietnamese)](./README.layman.vi.md)
+- [Yorùbá (Yoruba)](./README.layman.yo.md)
 
 ## 1. Delta
 

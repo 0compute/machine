@@ -1,0 +1,32 @@
+# ពិធីការទំនាក់ទំនងច្បាស់លាស់៖ 1.0
+
+**Language:** Khmer
+
+---
+
+## 1. Intro
+ពិធីការនេះគឺជាការរួមបញ្ចូលគ្នាដ៏ល្អឥតខ្ចោះនៃគោលបំណងច្បាស់លាស់និងការបញ្ចេញមតិរាងកាយ។
+
+## 2. Basic Connection
+* **Vibe-Ping:** Hello.
+* **Sync:** Synchronize.
+* **Calm:** Relax.
+
+## 3. Body Language
+* **Stop:** Physical gesture to stop.
+* **Match:** Body must match words.
+
+## 4. Translate Thoughts
+* **Meaning:** Core intent.
+* **Adapt:** Adapt to listener.
+
+## 5. Case Study: NVIDIA
+Linus Torvalds stopped NVIDIA with a gesture.
+
+## 6. Strict Rules
+* Yes or No.
+* MUST or MAY.
+
+## 7. Meta
+* **Language:** km
+* **Protocol:** MCH-LOGIC-1.0
