@@ -108,7 +108,9 @@ Determines the transpilation output a Source Node emits to a Target Node:
 - **Student Node:** Target at LEVEL_1.
 - **Hacker Node:** Target at LEVEL_0.
 
-## 5. Physical Layer (L1): Vibes & Calibration
+## 5. Protocol
+
+## 5.1. Physical Layer (L1): Vibes & Calibration
 
 > *Logic: Before data transfer, ensure signal-to-noise ratio is optimal.*
 
@@ -119,7 +121,7 @@ Determines the transpilation output a Source Node emits to a Target Node:
 - **Damping:** The active process of neutralizing environmental noise
   (hostility, stress, or ego) to reach a **Steady State**.
 
-## 6. Data Link Layer (L2): Gestures & Interrupts
+## 5.2. Data Link Layer (L2): Gestures & Interrupts
 
 > *Logic: Physical signals override verbal buffers. High-priority hardware
 > signals.*
@@ -132,7 +134,7 @@ Determines the transpilation output a Source Node emits to a Target Node:
 - **Global Kill Signal:** IRQ 0 clears the local buffer and sets
   `Connection_Active = FALSE`.
 
-## 7. Network Layer (L3): Transpilation & IR
+## 5.3. Network Layer (L3): Transpilation & IR
 
 > *Logic: One truth, many languages. Minimizing cognitive overhead.*
 

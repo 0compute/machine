@@ -2,20 +2,50 @@
 
 ```text
 Status: DRAFT
-UID: MLG-1.0
+UID: MLFG-1.0
 Base: Machine Lingua Franca 1.0 (MLF-1.0)
 Notation: ABNF (RFC 5234)
 ```
 
-## 1. Session
+## 1. Protocol Stack
 
 ```abnf
-session      = header "BEGIN_SESSION:" LF body "END_SESSION;" LF
+exchange = L1-phase L3-session
+           ; L2 events are async — MAY interrupt L3 at any point
+```
+
+## 2. L1: Physical Layer
+
+```abnf
+L1-phase     = vibe-ping *( resonance / damping )
+vibe-ping    = "VIBE_PING" ":" SP string-lit LF
+resonance    = "SYN" LF
+damping      = "DAMP" ":" SP noise-source LF
+noise-source = identifier
+```
+
+## 3. L2: Data Link Layer
+
+```abnf
+L2-event     = irq / parity-check
+irq          = "IRQ_" irq-id LF
+irq-id       = 1*DIGIT
+               ; IRQ_0: global kill — HALT_AND_CATCH_FIRE
+               ;        clears buffer, sets Connection_Active = FALSE
+parity-check = "PARITY" ":" SP identifier SP "==" SP identifier LF
+```
+
+## 4. L3: Network Layer
+
+### 4.1. Session
+
+```abnf
+L3-session   = header "BEGIN_SESSION:" LF body "END_SESSION;" LF
 header       = *( meta-comment / LF )
 body         = *( statement / comment / LF )
 ```
 
-## 2. Header
+### 4.2. Header
 
 ```abnf
 meta-comment = "//" SP "[" key "]" ":" SP value LF
@@ -23,7 +53,7 @@ key          = 1*( ALPHA / "_" )
 value        = 1*VCHAR
 ```
 
-## 3. Statements
+### 4.3. Statements
 
 ```abnf
 statement    = indent ( if-block / simple-stmt ) LF
@@ -47,7 +77,7 @@ clear        = "CLEAR_BUFFER"
 terminate    = "TERMINATE_SESSION"
 ```
 
-## 4. Expressions
+### 4.4. Expressions
 
 ```abnf
 condition    = expression
