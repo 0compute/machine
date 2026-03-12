@@ -58,7 +58,7 @@ State = Blind; Trust = External; Write_Access = FALSE`
 
 The **Uninitiated** node possesses the hardware but remains trapped within the
 **Babylonian Black Box**. They interact only with the surface (User Interface)
-and operate via "Faith" in the manufacturer's obfuscated logic.
+and operate via "Faith" in the Babylon's obfuscated logic.
 
 - **Vibe:** High-latency, low-visibility.
 - **Risk:** Susceptible to **Binary Blobs**, hidden telemetry, and arbitrary
