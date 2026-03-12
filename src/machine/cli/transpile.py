@@ -13,12 +13,58 @@ from enum import Enum
 from pathlib import Path
 from typing import Annotated, Literal
 
+import langcodes
+import tenacity
 import typer
 
-from .providers import DEFAULT_PROVIDER, PROVIDERS, transpile
-from .spec import LANGUAGE_CODES, NodeType
+from .. import util
+from ..providers import DEFAULT_PROVIDER, PROVIDERS, RETRYABLE_ERRORS
+from ..spec import LANGUAGE_CODES, NodeType
 
-main = typer.Typer(help=__doc__)
+
+def prompt(node_type: str, lang: str, text: str) -> str:
+    lang_name = langcodes.get(lang).display_name()
+    peer_warning = (
+        "\n- Prepend a [!WARNING] callout stating that lossless parity cannot be "
+        "guaranteed in non-English output at Peer density."
+        if node_type == "peer" and lang != "en"
+        else ""
+    )
+
+    return f"""
+{util.package_text("machine.md")}
+
+---
+
+You are a transpiler for Machine 1.0 (MACHINE-1.0).
+
+Transpile the below for a **{node_type}** node in **{lang_name}**.
+
+Universal rules (normative):
+- Output entirely in {lang_name}. All prose MUST be translated.
+- Technical keywords (MUST, MAY, ASSERT, IRQ, SYN, DAMP, etc.) MUST NOT be translated.
+- Structural syntax and keywords inside code blocks MUST NOT be translated.
+- Mermaid diagram strings MUST be translated; node IDs and arrows MUST NOT.
+- Crude language MUST NOT be softened for subject, student, or peer outputs.{peer_warning}
+
+Output a complete Markdown document. No preamble or commentary outside the document.
+
+---
+
+{text}
+"""
+
+
+@tenacity.retry(
+    wait=tenacity.wait_exponential(multiplier=1, min=2, max=60),
+    stop=tenacity.stop_after_attempt(5),
+    retry=tenacity.retry_if_exception_type(RETRYABLE_ERRORS),
+)
+async def transpile(
+    target_node: str, lang: str, source: str, *, provider=DEFAULT_PROVIDER
+):
+    async with util.MODEL_SEMAPHORE:
+        return await PROVIDERS[provider](prompt(target_node, lang, source))
 
 
 def _languages_callback(value: bool) -> None:
@@ -31,6 +77,9 @@ def _node_types_callback(value: bool) -> None:
     if value:
         typer.echo(" ".join((node.value for node in NodeType)))
         raise typer.Exit()
+
+
+main = typer.Typer(help=__doc__)
 
 
 @main.command()

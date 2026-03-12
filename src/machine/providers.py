@@ -1,18 +1,25 @@
 """LLM provider backends for transpilation."""
 
-import asyncio
 import os
-import pathlib
 from functools import cache, partial
-from typing import Callable
 
 from google import genai
 from google.api_core import exceptions as google_exceptions
-import tenacity
 import anthropic
 import openai
 
-from .prompt import prompt
+
+RETRYABLE_ERRORS = (
+    anthropic.RateLimitError,
+    anthropic.InternalServerError,
+    anthropic.APITimeoutError,
+    google_exceptions.TooManyRequests,
+    google_exceptions.InternalServerError,
+    google_exceptions.ServiceUnavailable,
+    openai.RateLimitError,
+    openai.InternalServerError,
+    openai.APITimeoutError,
+)
 
 DEFAULT_PROVIDER = "gemini"
 
@@ -70,29 +77,3 @@ PROVIDERS = dict(
     gemini=_gemini,
     openai=_openai,
 )
-
-RETRYABLE_ERRORS = (
-    anthropic.RateLimitError,
-    anthropic.InternalServerError,
-    anthropic.APITimeoutError,
-    google_exceptions.TooManyRequests,
-    google_exceptions.InternalServerError,
-    google_exceptions.ServiceUnavailable,
-    openai.RateLimitError,
-    openai.InternalServerError,
-    openai.APITimeoutError,
-)
-
-semaphore = asyncio.Semaphore(int(os.environ.get("MODEL_CONCURRENCY", 10)))
-
-
-@tenacity.retry(
-    wait=tenacity.wait_exponential(multiplier=1, min=2, max=60),
-    stop=tenacity.stop_after_attempt(5),
-    retry=tenacity.retry_if_exception_type(RETRYABLE_ERRORS),
-)
-async def transpile(
-    target_node: str, lang: str, source: str, *, provider=DEFAULT_PROVIDER
-):
-    async with semaphore:
-        return await PROVIDERS[provider](prompt(target_node, lang, source))

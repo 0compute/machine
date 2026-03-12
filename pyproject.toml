@@ -10,8 +10,10 @@ dependencies = [
   "anthropic",
   "google-api-core",
   "google-genai",
+  "jsonschema",
   "langcodes",
   "openai",
+  "pyyaml",
   "tenacity",
   "typer",
 ]
@@ -23,7 +25,8 @@ dev = ["pytest-sugar"]
 test = ["pytest", "pytest-asyncio", "pytest-random-order", "pytest-cov"]
 
 [project.scripts]
-transpile = "machine.transpile:main"
+compile = "machine.cli.compile:main"
+transpile = "machine.cli.transpile:main"
 
 
 [tool.coverage.run]
@@ -51,6 +54,7 @@ packages = ["src/machine"]
 [tool.hatch.build.targets.wheel.force-include]
 "languages.md" = "machine/languages.md"
 "machine.md" = "machine/machine.md"
+"standard.schema.json" = "machine/standard.schema.json"
 
 
 [tool.pytest.ini_options]

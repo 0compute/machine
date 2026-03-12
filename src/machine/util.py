@@ -1,7 +1,12 @@
+import asyncio
 import contextlib
+import os
 from importlib.resources import files
 from functools import lru_cache
 from pathlib import Path
+
+
+MODEL_SEMAPHORE = asyncio.Semaphore(int(os.environ.get("MODEL_CONCURRENCY", 10)))
 
 
 @lru_cache

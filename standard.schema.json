@@ -10,6 +10,9 @@
   ],
   "additionalProperties": false,
   "properties": {
+    "machine_session": {
+      "type": "string"
+    },
     "compliance_matrix": {
       "type": "object",
       "additionalProperties": false,
@@ -33,6 +36,9 @@
               ]
             },
             "requirement": {
+              "type": "string"
+            },
+            "status": {
               "type": "string"
             }
           }
@@ -157,6 +163,9 @@
             "Apostolic_Engineering",
             "Universal_Law"
           ]
+        },
+        "name": {
+          "type": "string"
         },
         "philosophy": {
           "type": "string"
