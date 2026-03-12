@@ -23,7 +23,7 @@ OUTDIR ?= human
 define RULE
 $(OUTDIR)/$(1)/README.$(1).$(2).md: machine.md grammar.md
 	@mkdir -p $$(@D)
-	$(TRANSPILE) $(1) $(2) > $$@
+	$(TRANSPILE) $(1) $(2) $$< > $$@
 endef
 
 $(foreach t,$(NODE_TYPES),\

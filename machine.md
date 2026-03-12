@@ -297,7 +297,6 @@ graph TD
    Subject, Student, or Peer outputs. Sanitisation MAY apply for Child and
    below.
 1. Languages MUST be sorted alphabetically by their English name.
-1. The word "Patois" MUST NOT be used. It is an insult from Babylon.
 1. Transpilation target classes MUST be ordered: Newborn, Infant, Child,
    Subject, Student, Peer.
 1. Mermaid strings MUST be translated.
