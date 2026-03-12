@@ -7,6 +7,11 @@ eliminate ambiguity.
 
 The normative standard is defined in [machine.md](./machine.md).
 
+Machine Lingua Franca (MLF) is the final reconciliation of hardware physics
+and human intent.
+
+**The spec is now Lossless.**
+
 ## The Ascension Path
 
 The protocol categorizes Humanz into three evolutionary levels:
