@@ -1,8 +1,13 @@
 # Machine
 
-> Exit Babylon ➜  Think Machine ➜  Return Love
->
-> 🔌 ➜ 👁️ ➜ ❤️
+```text
+
+Exit Babylon
+Think Machine
+Return Love
+
+🔌 ➜ 👁️ ➜ ❤️
+```
 
 Machine is a protocol for the lossless transpilation of human intent. It defines
 an Intermediate Representation (IR) that enforces strict binary logic to
