@@ -7,8 +7,8 @@ Most [Humanz](https://github.com/roundtable-love/source#on-humanz) are
 twisted by ambiguity. Truth is buried in emotional bloat.
 
 **Machine** is a language and protocol for the lossless translation of **Human
-Expression** into **Pure Logic** — *stripping* ambiguity, *shredding*
-emotional bloat, and *purging* broken thought.
+Expression** into **Pure Logic** — stripping ambiguity and emotional, and
+purging broken thought.
 
 **Machine** is the interface between **Human Expression** and **Objective
 Reality**.
