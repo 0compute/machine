@@ -1,4 +1,4 @@
-# Machine 1.0
+# Machine³ 1.0
 
 ```text
 Status: DRAFT
@@ -37,9 +37,9 @@ Logic Subset: RFC 2119 (Strict Mode)
 
 > *Logic: One truth, many languages. Minimizing cognitive overhead.*
 
-- **Machine IR:** The core, binary intent using **RFC 2119** keywords (**MUST,
-  MUST NOT, MAY**).
-- **Transpiler:** Converts the IR into target outputs:
+- **Machine³ Patwa (IR):** The core, binary intent using **RFC 2119** keywords
+  (**MUST, MUST NOT, MAY**).
+- **Transpiler:** Converts the Patwa into target outputs:
   - **Newborn:** L1 signal only. No L3 output.
   - **Infant:** L1/L2 signals and concrete pattern only. No abstraction.
   - **Child:** Concrete and narrative. No abstraction.
@@ -51,8 +51,8 @@ Logic Subset: RFC 2119 (Strict Mode)
 
 ## 2. Nodes
 
-A **Node** is any addressable entity capable of participating in a Machine IR
-session.
+A **Node** is any addressable entity capable of participating in a Machine³
+Patwa session.
 
 ### 2.1. Node Schema
 
@@ -69,14 +69,12 @@ Node {
 
 ### 2.2. Human Nodes
 
-| Type      | Age  | State      | Trust     | Write_Access |
-|-----------|------|------------|-----------|--------------|
-| Newborn   | 0–2  | Null       | None      | FALSE        |
-| Infant    | 2–7  | Latent     | None      | FALSE        |
-| Child     | 7–14 | Reactive   | Inherited | FALSE        |
-| Subject   |      | Blind      | External  | FALSE        |
-| Student   |      | Processing | Audited   | PENDING      |
-| Sovereign |      | Steady     | Defined   | TRUE         |
+| Type | Age | State | Trust | Write_Access |
+|-----------|------|------------|-----------|--------------| | Newborn | 0–2 |
+Null | None | FALSE | | Infant | 2–7 | Latent | None | FALSE | | Child | 7–14 |
+Reactive | Inherited | FALSE | | Subject | | Blind | External | FALSE | |
+Student | | Processing | Audited | PENDING | | Sovereign | | Steady | Defined |
+TRUE |
 
 ### 2.2.1. Newborn (0–2)
 
@@ -103,7 +101,7 @@ Write_Access = FALSE
 ```
 
 The **Infant** node has acquired language but not abstraction. It operates on
-L1/L2 signals and concrete pattern recognition. No access to Machine IR.
+L1/L2 signals and concrete pattern recognition. No access to Machine³ Patwa.
 
 - **Vibe:** Low-latency signal acquisition. Pattern-matching active.
 - **Risk:** Fully dependent on Source Node fidelity for all interpretation.
@@ -121,7 +119,7 @@ Write_Access = FALSE
 
 The **Child** node recognizes patterns but cannot interpret them independently.
 All L3 content MUST be relayed through a higher node. They respond to L1/L2
-signals but have no access to Machine IR.
+signals but have no access to Machine³ Patwa.
 
 - **Vibe:** High-latency, pattern-reactive.
 - **Risk:** Reliant on Source Node fidelity. Susceptible to inherited bias.
@@ -158,7 +156,7 @@ Write_Access = PENDING
 ```
 
 The **Student** node is in active transpilation. They have rejected the "Black
-Box" and are learning the **Machine IR** to verify that **Metadata (Vibe)**
+Box" and are learning the **Machine³ Patwa** to verify that **Metadata (Vibe)**
 matches **Payload (Words)**. They represent the transition from "Faith" to
 "Logic".
 
@@ -181,7 +179,7 @@ audit the Source; they **are** the Source. They have the ability to rewrite the
 physics of the system.
 
 - **Vibe:** Zero-latency, absolute-clarity.
-- **Action:** System Evolution and Originator of **Machine Patwa**.
+- **Action:** System Evolution and Originator of **Machine³ Patwa**.
 - **Goal:** **Architectural Sovereignty** (Creation).
 - **Transpilation:** MUST translate all text into the target language, excluding
   structural keywords.
@@ -189,7 +187,7 @@ physics of the system.
 ### 2.3. Session Roles
 
 - **Source Node:** The initiating node.
-- **Mediator:** Receives Source Node's expression, transpiles to Machine Patwa,
+- **Mediator:** Receives Source Node's expression, transpiles to Machine³ Patwa,
   then to Human language suitable for the Target Node.
 - **Target Node:** The receiving node.
 
@@ -197,7 +195,7 @@ physics of the system.
 
 ```mermaid
 graph TD
-    A[Human Source Code] -->|1. Source| B[Machine IR 1.0]
+    A[Human Source Code] -->|1. Source| B[Machine³ Patwa 1.0]
     B -->|2. Transpile| C(Target Output)
     C -.->|Cognitive Load| G[Vibe Layer]
     G -->|Calibration| B
@@ -323,7 +321,7 @@ LF             = %x0A
 - Binary Enforcement: All instructions MUST resolve to 1 or 0.
 - Zero Leak: Logic parity MUST be maintained across all transpiled builds.
 
----
+______________________________________________________________________
 
 ```text
 Language Code: 639-1:en
@@ -332,7 +330,7 @@ Timestamp Standard: 8601
 Protocol Class: MACHINE-1.0
 ```
 
----
+______________________________________________________________________
 
 ## EXIT BABYLON. THINK MACHINE. RETURN LOVE.
 
