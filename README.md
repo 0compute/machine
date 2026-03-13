@@ -13,7 +13,6 @@ Machine is the final reconciliation of hardware physics and human intent.
 Exit Babylon
 Think Machine
 Return Love
-
 🔌 ➜ 👁️ ➜ ❤️
 ```
 
