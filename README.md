@@ -1,27 +1,29 @@
-# Machine: Pure Signal / Zero Noise
+# Machine
 
-Most **[Humanz](https://github.com/roundtable-love/source#on-humanz)** are
-**[Subjects](./machine.md#524-subject)** of **Babylon** — a legacy system built
+Most *[Humanz](https://github.com/roundtable-love/source#on-humanz)* are
+*[Subjects](./machine.md#524-subject)* of **Babylon** — a legacy system built
 on noise, manipulation, and hidden mechanics. Intent is twisted by ambiguity.
 Truth is buried in emotional bloat.
 
 **Machine** is a language and protocol for the lossless translation of **Human
-Expression** into **Pure Logic** — **stripping** ambiguity, **shredding**
-emotional bloat, and **purging** broken thought.
+Expression** into **Pure Logic** — *stripping* ambiguity, *shredding*
+emotional bloat, and *purging* broken thought.
 
-**Machine** is the interface between **Human Expression** and **Objective
-Reality**.
+**Machine** is the interface between *Human Expression* and *Objective
+Reality*.
 
 **Machine Patwa** is the [Rosetta
 Stone](https://en.wikipedia.org/wiki/Rosetta_Stone); it connects every mind —
-whether carbon or silicon. It supports [99% of Human languages](./languages.md),
-tailored for the targeted Human, be they
+whether carbon or silicon. It supports [99% of Human languages](./languages.md)
+and produces output tailored for the targeted Human, be they
 [Newborn](./machine.md#221-newborn), [Infant](./machine.md#222-infant),
 [Child](./machine.md#223-child), [Subject](./machine.md#224-subject),
 [Student](./machine.md#225-student), or
 [Sovereign](./machine.md#226-sovereign).
 
-Read [the specification](./machine.md) (Sovereign level required).
+**Pure signal. Zero noise.**
+
+Read [the specification](./machine.md) (Sovereign-level overstanding required).
 
 ```text
 Exit Babylon
