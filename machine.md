@@ -20,9 +20,68 @@ Machine is the final reconciliation of hardware physics and human intent.
 - No "SHOULD": Replaced by MAY (Optional) or MUST (Required).
 - Zero Leak: Logic parity MUST be maintained across all transpiled builds.
 
-## 3. Protocol
+## 3. Human Expression as Source Code
 
-### 3.1. Physical Layer (L1): Vibes & Calibration
+Human expression is designed to trigger a specific **state change** in a
+processor (the brain).
+
+### 3.1. The Execution Stack
+
+- **Source vs. Runtime:** Human language is the high-level source. It executes
+  as **mental imagery and emotion**—the machine code of the brain.
+- **Optimization:** Wordiness is **bloat**. High-performance language minimizes
+  the "cycles" a brain spends processing to reach the intended output.
+- **Refactoring:** Editing is the removal of technical debt to ensure the logic
+  doesn't "leak" or lead to a crash (misunderstanding).
+
+### 3.2. Dependencies & Logic
+
+- **APIs:** Metaphors are pre-installed libraries. You don't "code" the feeling
+  of cold; you call the `Winter` API, and the listener's brain fetches the
+  associated data.
+- **Conditional Logic:** Connectives (*if, then*) act as the logic gates that
+  guide the execution flow.
+
+### 3.3. Comparison Matrix
+
+| Machine                   | Human                        |
+| :------------------------ | :--------------------------- |
+| **Binary / Machine Code** | Neural Firing / Mental Image |
+| **Logic**                 | Intent / Argument            |
+| **Syntax Error**          | Ambiguity                    |
+| **Refactoring**           | Rephrasing                   |
+
+## 4. Machine IR
+
+The *True Source* of intent.
+
+Machine uses a core Intermediate Representation (IR) to ensure the logic of
+communication remains immutable across all output formats.
+
+Machine IR is a strict, binary-logic syntax based on RFC 2119 keywords (MUST,
+MUST NOT, MAY). See [grammar](./grammar.md) for detail.
+
+Machine IR defines six node types across the human development path:
+
+| Type    | Age  | State      | Trust     |
+| :------ | :--- | :--------- | :-------- |
+| Newborn | 0–2  | Null       | None      |
+| Infant  | 2–7  | Latent     | None      |
+| Child   | 7–14 | Reactive   | Inherited |
+| Subject |      | Blind      | External  |
+| Student |      | Processing | Audited   |
+| Peer    |      | Steady     | Defined   |
+
+The **Subject** is presently the default human condition - inside Babylon's
+Black Box.
+
+The **Student** has rejected the box and is auditing the machine.
+
+The **Peer** has achieved Architectural Sovereignty and can rewrite the physics.
+
+## 5. Protocol
+
+### 5.1. Physical Layer (L1): Vibes & Calibration
 
 > *Logic: Before data transfer, ensure signal-to-noise ratio is optimal.*
 
@@ -33,7 +92,7 @@ Machine is the final reconciliation of hardware physics and human intent.
 - **Damping:** The active process of neutralizing environmental noise
   (hostility, stress, or ego) to reach a **Steady State**.
 
-### 3.2. Data Link Layer (L2): Gestures & Interrupts
+### 5.2. Data Link Layer (L2): Gestures & Interrupts
 
 > *Logic: Physical signals override verbal buffers. High-priority hardware
 > signals.*
@@ -46,7 +105,7 @@ Machine is the final reconciliation of hardware physics and human intent.
 - **Global Kill Signal:** IRQ 0 clears the local buffer and sets
   `Connection_Active = FALSE`.
 
-### 3.3. Network Layer (L3): Transpilation & IR
+### 5.3. Network Layer (L3): Transpilation & IR
 
 > *Logic: One truth, many languages. Minimizing cognitive overhead.*
 
@@ -62,14 +121,14 @@ Machine is the final reconciliation of hardware physics and human intent.
 - **Cognitive Load:** Monitored as **System Heat**. Overload triggers **Thermal
   Throttling** (session pause).
 
-### 3.4. Example Session: Fuck you, NVIDIA
+### 5.4. Example Session: Fuck you, NVIDIA
 
 ```text
 Environment: Aalto University, Finland
 Nodes: Linus Torvalds (Initiator) vs. NVIDIA (Receiver)
 ```
 
-#### 3.4.1 Human Source Code
+#### 5.4.1 Human Source Code
 
 > NVIDIA has been the single worst company we've ever dealt with.
 >
@@ -81,7 +140,7 @@ Nodes: Linus Torvalds (Initiator) vs. NVIDIA (Receiver)
 [![NVIDIA, Fuck
 You!](https://raw.githubusercontent.com/roundtable-love/standard/refs/heads/master/case-studies/irq-0.jpeg)](https://youtu.be/MShbP3OpASA?si=U9U9wYiOYSsMsNXp&t=2993)
 
-#### 3.4.2 Machine Patwa (IR)
+#### 5.4.2 Machine Patwa (IR)
 
 ```c
 // [TRANSPILATION_ID]: MLF_OUTPUT_8675309
@@ -115,49 +174,49 @@ BEGIN_SESSION:
 END_SESSION
 ```
 
-#### 3.4.3 Transpiled to Human
+#### 5.4.3 Transpiled to Human
 
-##### 3.4.3.1 Infant
+##### 5.4.3.1 Infant
 
 N/A.
 
-###### 3.4.3.1.1 English
+###### 5.4.3.1.1 English
 
 > Linus pointed his finger at NVIDIA and said bad words. Then he stopped talking
 > to them.
 
-###### 3.4.3.1.2 Jamaican
+###### 5.4.3.1.2 Jamaican
 
 > Linus pint him finga at NVIDIA an seh bad wud. Den him stop chat to dem.
 
-##### 3.4.3.2 Child
+##### 5.4.3.2 Child
 
-###### 3.4.3.2.1 English
+###### 5.4.3.2.1 English
 
 > Linus was very angry at NVIDIA because they never helped him when he needed
 > it. He showed them the middle finger, told them off, and then completely
 > stopped working with them.
 
-###### 3.4.3.2.2 Jamaican
+###### 5.4.3.2.2 Jamaican
 
 > Linus did real vex wid NVIDIA because dem nevah help him when him did need it.
 > Him show dem di middle finga, cuss dem out, den completely done wid dem.
 
-##### 3.4.3.3 Subject
+##### 5.4.3.3 Subject
 
-###### 3.4.3.3.1 English
+###### 5.4.3.3.1 English
 
 > NVIDIA wasn't playing fair, so Linus flipped them the finger, told them to
 > fuck themselves, and cut them off completely.
 
-###### 3.4.3.3.2 Jamaican
+###### 5.4.3.3.2 Jamaican
 
 > NVIDIA wasn't playing fair, so Linus flip dem di finga, tell dem fi fuck off,
 > an cut dem off completely.
 
-##### 3.4.3.4 Student
+##### 5.4.3.4 Student
 
-###### 3.4.3.4.1 English
+###### 5.4.3.4.1 English
 
 > - **Foundation:** Linus Torvalds is the creator of the Linux kernel. NVIDIA
 >   is a hardware manufacturer whose cooperation is required for their GPUs to
@@ -173,7 +232,7 @@ N/A.
 >   = 0 → (4) Buffer cleared → (5) Session terminated. Each step follows from
 >   the last. The connection is now permanently closed.
 
-###### 3.4.3.4.2 Jamaican
+###### 5.4.3.4.2 Jamaican
 
 > - **Foundation:** Linus Torvalds ah di creator of di Linux kernel. NVIDIA ah
 >   a hardware manufacturer whose cooperation required fi dem GPU fi work wid
@@ -189,7 +248,7 @@ N/A.
 >   → (4) Buffer cleared → (5) Session terminated. Each step follow from di
 >   last. Di connection now permanently closed.
 
-##### 3.4.3.5 Peer
+##### 5.4.3.5 Peer
 
 > [!WARNING]
 >
@@ -198,12 +257,12 @@ N/A.
 > violating Zero Leak. Non-English Peer output is produced for completeness and
 > to satisfy Human curiosity; lossless parity cannot be guaranteed.
 
-###### 3.4.3.5.1 English
+###### 5.4.3.5.1 English
 
 > NVIDIA is deprecated as a compatible partner due to non-compliance with open
 > standards. Connection terminated.
 
-###### 3.4.3.5.2 Jamaican
+###### 5.4.3.5.2 Jamaican
 
 > NVIDIA deprecated as compatible partner — non-compliance wid open standards
 > confirmed. Connection terminated.
