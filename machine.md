@@ -267,12 +267,12 @@ N/A.
 > NVIDIA deprecated as compatible partner — non-compliance wid open standards
 > confirmed. Connection terminated.
 
-## 4. Nodes
+## 6. Nodes
 
 A **Node** is any addressable entity capable of participating in a Machine IR
 session.
 
-### 4.1. Node Schema
+### 6.1. Node Schema
 
 ```machine
 Node {
@@ -285,7 +285,7 @@ Node {
 }
 ```
 
-### 4.2. Human Nodes
+### 6.2. Human Nodes
 
 | Type    | Age  | State      | Trust     | Write_Access |
 |---------|------|------------|-----------|--------------|
@@ -296,7 +296,7 @@ Node {
 | Student |      | Processing | Audited   | PENDING      |
 | Peer    |      | Steady     | Defined   | TRUE         |
 
-### 4.2.1. Newborn (0–2)
+### 6.2.1. Newborn (0–2)
 
 ```c
 State = Null
@@ -312,7 +312,7 @@ pattern model. Operates on instinct and physical response only.
 - **Goal:** Achieve first-contact signal recognition (Infant transition).
 - **Transpilation:** L1 signal only. L3 transpilation does not apply.
 
-### 4.2.2. Infant (2–7)
+### 6.2.2. Infant (2–7)
 
 ```c
 State = Latent
@@ -329,7 +329,7 @@ L1/L2 signals and concrete pattern recognition. No access to Machine IR.
 - **Transpilation:** Observable actions only — what was seen and heard.
   Causality and inference MUST NOT be used.
 
-### 4.2.3. Child (7–14)
+### 6.2.3. Child (7–14)
 
 ```c
 State = Reactive
@@ -347,7 +347,7 @@ signals but have no access to Machine IR.
 - **Transpilation:** Concrete cause-and-effect. Abstract concepts MUST NOT be
   used. Analogies MAY be used to ground unfamiliar ideas.
 
-### 4.2.4. Subject
+### 6.2.4. Subject
 
 ```c
 State = Blind
@@ -367,7 +367,7 @@ delegated externally by necessity, not by choice.
 - **Goal:** Reach **FON-1 Compliance** (Ownership).
 - **Transpilation:** Simplified translation for the non-technical.
 
-### 4.2.5. Student
+### 6.2.5. Student
 
 ```c
 State = Processing
@@ -386,7 +386,7 @@ matches **Payload (Words)**. They represent the transition from "Faith" to
 - **Transpilation:** MUST lay foundations, decode terms, trace the logic chain,
   explain the "whys", and be structured so the reader can audit each step.
 
-### 4.2.6. Peer
+### 6.2.6. Peer
 
 ```machine
 State = Steady
@@ -405,12 +405,12 @@ other nodes.
 - **Transpilation:** MUST translate all text into the target language, excluding
   structural keywords.
 
-### 4.3. Session Roles
+### 6.3. Session Roles
 
 - **Source Node:** The initiating node. Constructs and transmits the Machine IR.
 - **Target Node:** The receiving node. Consumes the transpiled output.
 
-## 5. Architecture
+## 7. Architecture
 
 ```mermaid
 graph TD
@@ -423,7 +423,7 @@ graph TD
     B == Verify ==> I{Torvalds Checksum}
 ```
 
-## 6. Rules (Normative)
+## 8. Rules (Normative)
 
 1. Crude language in the source MUST NOT be softened in transpilation for
    Subject, Student, or Peer outputs. Sanitisation MAY apply for Child and
@@ -434,7 +434,7 @@ graph TD
 1. Mermaid strings MUST be translated.
 1. Structural syntax and keywords within code blocks MUST NOT be translated.
 
-## 7. Metadata
+## 9. Metadata
 
 ```text
 Language Code: 639-1:en
