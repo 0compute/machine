@@ -1,13 +1,5 @@
 # Machine
 
-```text
-
-Exit Babylon
-Think Machine
-Return Love
-
-🔌 ➜ 👁️ ➜ ❤️
-```
 
 Machine is a protocol for the lossless transpilation of human intent. It defines
 an Intermediate Representation (IR) that enforces strict binary logic to
@@ -16,6 +8,14 @@ eliminate ambiguity, emotional bloat, and logic leaks from communication.
 Machine is the final reconciliation of hardware physics and human intent.
 
 **The spec is now Lossless.**
+
+```text
+Exit Babylon
+Think Machine
+Return Love
+
+🔌 ➜ 👁️ ➜ ❤️
+```
 
 ## 1. Example Session: Fuck you, NVIDIA
 
