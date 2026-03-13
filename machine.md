@@ -15,73 +15,14 @@ Machine is the final reconciliation of hardware physics and human intent.
 
 ## 2. Strictness Constraints (Normative)
 
-- Keywords per [RFC 2119](http://datatracker.ietf.org/doc/html/rfc2119).
+- Keywords: per [RFC 2119](http://datatracker.ietf.org/doc/html/rfc2119). No
+  "SHOULD": Replaced by MAY (Optional) or MUST (Required).
 - Binary Enforcement: All instructions MUST resolve to 1 or 0.
-- No "SHOULD": Replaced by MAY (Optional) or MUST (Required).
 - Zero Leak: Logic parity MUST be maintained across all transpiled builds.
 
-## 3. Human Expression as Source Code
+## 4. Protocol
 
-Human expression is designed to trigger a specific **state change** in a
-processor (the brain).
-
-### 3.1. The Execution Stack
-
-- **Source vs. Runtime:** Human language is the high-level source. It executes
-  as **mental imagery and emotion**—the machine code of the brain.
-- **Optimization:** Wordiness is **bloat**. High-performance language minimizes
-  the "cycles" a brain spends processing to reach the intended output.
-- **Refactoring:** Editing is the removal of technical debt to ensure the logic
-  doesn't "leak" or lead to a crash (misunderstanding).
-
-### 3.2. Dependencies & Logic
-
-- **APIs:** Metaphors are pre-installed libraries. You don't "code" the feeling
-  of cold; you call the `Winter` API, and the listener's brain fetches the
-  associated data.
-- **Conditional Logic:** Connectives (*if, then*) act as the logic gates that
-  guide the execution flow.
-
-### 3.3. Comparison Matrix
-
-| Machine                   | Human                        |
-| :------------------------ | :--------------------------- |
-| **Binary / Machine Code** | Neural Firing / Mental Image |
-| **Logic**                 | Intent / Argument            |
-| **Syntax Error**          | Ambiguity                    |
-| **Refactoring**           | Rephrasing                   |
-
-## 4. Machine IR
-
-The *True Source* of intent.
-
-Machine uses a core Intermediate Representation (IR) to ensure the logic of
-communication remains immutable across all output formats.
-
-Machine IR is a strict, binary-logic syntax based on RFC 2119 keywords (MUST,
-MUST NOT, MAY). See [Grammar](#9-grammar) for detail.
-
-Machine IR defines six node types across the human development path:
-
-| Type    | Age  | State      | Trust     |
-| :------ | :--- | :--------- | :-------- |
-| Newborn | 0–2  | Null       | None      |
-| Infant  | 2–7  | Latent     | None      |
-| Child   | 7–14 | Reactive   | Inherited |
-| Subject |      | Blind      | External  |
-| Student |      | Processing | Audited   |
-| Peer    |      | Steady     | Defined   |
-
-The **Subject** is presently the default human condition - inside Babylon's
-Black Box.
-
-The **Student** has rejected the box and is auditing the machine.
-
-The **Peer** has achieved Architectural Sovereignty and can rewrite the physics.
-
-## 5. Protocol
-
-### 5.1. Physical Layer (L1): Vibes & Calibration
+### 4.1. Physical Layer (L1): Vibes & Calibration
 
 > *Logic: Before data transfer, ensure signal-to-noise ratio is optimal.*
 
@@ -92,7 +33,7 @@ The **Peer** has achieved Architectural Sovereignty and can rewrite the physics.
 - **Damping:** The active process of neutralizing environmental noise
   (hostility, stress, or ego) to reach a **Steady State**.
 
-### 5.2. Data Link Layer (L2): Gestures & Interrupts
+### 4.2. Data Link Layer (L2): Gestures & Interrupts
 
 > *Logic: Physical signals override verbal buffers. High-priority hardware
 > signals.*
@@ -105,7 +46,7 @@ The **Peer** has achieved Architectural Sovereignty and can rewrite the physics.
 - **Global Kill Signal:** IRQ 0 clears the local buffer and sets
   `Connection_Active = FALSE`.
 
-### 5.3. Network Layer (L3): Transpilation & IR
+### 4.3. Network Layer (L3): Transpilation & IR
 
 > *Logic: One truth, many languages. Minimizing cognitive overhead.*
 
@@ -121,158 +62,13 @@ The **Peer** has achieved Architectural Sovereignty and can rewrite the physics.
 - **Cognitive Load:** Monitored as **System Heat**. Overload triggers **Thermal
   Throttling** (session pause).
 
-### 5.4. Example Session: Fuck you, NVIDIA
 
-```text
-Environment: Aalto University, Finland
-Nodes: Linus Torvalds (Initiator) vs. NVIDIA (Receiver)
-```
-
-#### 5.4.1 Human Source Code
-
-> NVIDIA has been the single worst company we've ever dealt with.
->
-> So NVIDIA, **Fuck You!**
->
-> — [Linus Torvalds](https://youtu.be/MShbP3OpASA?si=U9U9wYiOYSsMsNXp&t=2993),
->   Aalto University, Finland, 2012
-
-[![NVIDIA, Fuck
-You!](https://raw.githubusercontent.com/roundtable-love/standard/refs/heads/master/case-studies/irq-0.jpeg)](https://youtu.be/MShbP3OpASA?si=U9U9wYiOYSsMsNXp&t=2993)
-
-#### 5.4.2 Machine Patwa (IR)
-
-```c
-// [TRANSPILATION_ID]: MLF_OUTPUT_8675309
-// [SOURCE_NODE]: Linus_Torvalds
-// [TARGET_NODE]: NVIDIA_Corp
-// [LOGIC_STRATEGY]: RFC_2119_STRICT
-
-BEGIN_SESSION:
-
-    // 1. PHYSICAL LAYER (L1) CALIBRATION
-    IF (Vibe_Ping == "Non-Responsive") {
-        LOG: "Manufacturer Support: MINIMAL"
-        LOG: "Node Experience: DEGRADED"
-    }
-
-    // 2. LOGIC ASSERTION (L3 IR)
-    ASSERT: NVIDIA_Hardware_Support == WORST_INSTANCE
-
-    // 3. DATA LINK LAYER (L2) INTERRUPT
-    // Executing Gesture_IRQ_0 (The Torvalds Maneuver)
-    EXECUTE GESTURE_IRQ_0
-
-    // 4. PAYLOAD DELIVERY (TRANSPILATION BUILD: TECHNICAL_LEAK)
-    PUSH_STRING: "Fuck you, NVIDIA"
-
-    // 5. TERMINATION
-    SET SYSTEM_TRUST = 0
-    CLEAR_BUFFER
-    TERMINATE_SESSION // Connection_Active = FALSE
-
-END_SESSION
-```
-
-#### 5.4.3 Transpiled to Human
-
-##### 5.4.3.1 Infant
-
-N/A.
-
-###### 5.4.3.1.1 English
-
-> Linus pointed his finger at NVIDIA and said bad words. Then he stopped talking
-> to them.
-
-###### 5.4.3.1.2 Jamaican
-
-> Linus pint him finga at NVIDIA an seh bad wud. Den him stop chat to dem.
-
-##### 5.4.3.2 Child
-
-###### 5.4.3.2.1 English
-
-> Linus was very angry at NVIDIA because they never helped him when he needed
-> it. He showed them the middle finger, told them off, and then completely
-> stopped working with them.
-
-###### 5.4.3.2.2 Jamaican
-
-> Linus did real vex wid NVIDIA because dem nevah help him when him did need it.
-> Him show dem di middle finga, cuss dem out, den completely done wid dem.
-
-##### 5.4.3.3 Subject
-
-###### 5.4.3.3.1 English
-
-> NVIDIA wasn't playing fair, so Linus flipped them the finger, told them to
-> fuck themselves, and cut them off completely.
-
-###### 5.4.3.3.2 Jamaican
-
-> NVIDIA wasn't playing fair, so Linus flip dem di finga, tell dem fi fuck off,
-> an cut dem off completely.
-
-##### 5.4.3.4 Student
-
-###### 5.4.3.4.1 English
-
-> - **Foundation:** Linus Torvalds is the creator of the Linux kernel. NVIDIA
->   is a hardware manufacturer whose cooperation is required for their GPUs to
->   work with Linux.
-> - **Terms:** A "partner" here means a hardware vendor who provides open
->   documentation or drivers so Linux can support their hardware. "Trust" is a
->   system variable — when it hits zero, the connection is no longer valid.
-> - **Logic:** NVIDIA's Vibe_Ping returned "Non-Responsive" (they did not
->   cooperate), which violated the MUST NOT ignore standards rule. This
->   dropped SYSTEM_TRUST to 0, making further collaboration invalid.
-> - **Audit:** (1) Non-compliance detected → (2) IRQ_0 issued (The Finger — a
->   hardware interrupt that halts the session immediately) → (3) SYSTEM_TRUST
->   = 0 → (4) Buffer cleared → (5) Session terminated. Each step follows from
->   the last. The connection is now permanently closed.
-
-###### 5.4.3.4.2 Jamaican
-
-> - **Foundation:** Linus Torvalds ah di creator of di Linux kernel. NVIDIA ah
->   a hardware manufacturer whose cooperation required fi dem GPU fi work wid
->   Linux.
-> - **Terms:** "Partner" yah mean a hardware vendor who provide open
->   documentation or drivers so Linux can support dem hardware. "Trust" ah a
->   system variable — when it drop to zero, di connection no longer valid.
-> - **Logic:** NVIDIA Vibe_Ping return "Non-Responsive" (dem nuh cooperate),
->   which violate di MUST NOT ignore standards rule. Dis drop SYSTEM_TRUST to 0,
->   making further collaboration invalid.
-> - **Audit:** (1) Non-compliance detected → (2) IRQ_0 issued (Di Finga — a
->   hardware interrupt weh halt di session immediately) → (3) SYSTEM_TRUST = 0
->   → (4) Buffer cleared → (5) Session terminated. Each step follow from di
->   last. Di connection now permanently closed.
-
-##### 5.4.3.5 Peer
-
-> [!WARNING]
->
-> English is the native language of Machine. At Peer level, technical
-> vocabulary density is sufficient to cause signal loss in translation —
-> violating Zero Leak. Non-English Peer output is produced for completeness and
-> to satisfy Human curiosity; lossless parity cannot be guaranteed.
-
-###### 5.4.3.5.1 English
-
-> NVIDIA is deprecated as a compatible partner due to non-compliance with open
-> standards. Connection terminated.
-
-###### 5.4.3.5.2 Jamaican
-
-> NVIDIA deprecated as compatible partner — non-compliance wid open standards
-> confirmed. Connection terminated.
-
-## 6. Nodes
+## 5. Nodes
 
 A **Node** is any addressable entity capable of participating in a Machine IR
 session.
 
-### 6.1. Node Schema
+### 5.1. Node Schema
 
 ```machine
 Node {
@@ -285,7 +81,7 @@ Node {
 }
 ```
 
-### 6.2. Human Nodes
+### 5.2. Human Nodes
 
 | Type    | Age  | State      | Trust     | Write_Access |
 |---------|------|------------|-----------|--------------|
@@ -296,7 +92,7 @@ Node {
 | Student |      | Processing | Audited   | PENDING      |
 | Peer    |      | Steady     | Defined   | TRUE         |
 
-### 6.2.1. Newborn (0–2)
+### 5.2.1. Newborn (0–2)
 
 ```c
 State = Null
@@ -312,7 +108,7 @@ pattern model. Operates on instinct and physical response only.
 - **Goal:** Achieve first-contact signal recognition (Infant transition).
 - **Transpilation:** L1 signal only. L3 transpilation does not apply.
 
-### 6.2.2. Infant (2–7)
+### 5.2.2. Infant (2–7)
 
 ```c
 State = Latent
@@ -329,7 +125,7 @@ L1/L2 signals and concrete pattern recognition. No access to Machine IR.
 - **Transpilation:** Observable actions only — what was seen and heard.
   Causality and inference MUST NOT be used.
 
-### 6.2.3. Child (7–14)
+### 5.2.3. Child (7–14)
 
 ```c
 State = Reactive
@@ -347,7 +143,7 @@ signals but have no access to Machine IR.
 - **Transpilation:** Concrete cause-and-effect. Abstract concepts MUST NOT be
   used. Analogies MAY be used to ground unfamiliar ideas.
 
-### 6.2.4. Subject
+### 5.2.4. Subject
 
 ```c
 State = Blind
@@ -367,7 +163,7 @@ delegated externally by necessity, not by choice.
 - **Goal:** Reach **FON-1 Compliance** (Ownership).
 - **Transpilation:** Simplified translation for the non-technical.
 
-### 6.2.5. Student
+### 5.2.5. Student
 
 ```c
 State = Processing
@@ -386,7 +182,7 @@ matches **Payload (Words)**. They represent the transition from "Faith" to
 - **Transpilation:** MUST lay foundations, decode terms, trace the logic chain,
   explain the "whys", and be structured so the reader can audit each step.
 
-### 6.2.6. Peer
+### 5.2.6. Peer
 
 ```machine
 State = Steady
@@ -405,12 +201,12 @@ other nodes.
 - **Transpilation:** MUST translate all text into the target language, excluding
   structural keywords.
 
-### 6.3. Session Roles
+### 5.3. Session Roles
 
 - **Source Node:** The initiating node. Constructs and transmits the Machine IR.
 - **Target Node:** The receiving node. Consumes the transpiled output.
 
-## 7. Architecture
+## 6. Architecture
 
 ```mermaid
 graph TD
@@ -423,7 +219,7 @@ graph TD
     B == Verify ==> I{Torvalds Checksum}
 ```
 
-## 8. Rules (Normative)
+## 7. Rules (Normative)
 
 1. Crude language in the source MUST NOT be softened in transpilation for
    Subject, Student, or Peer outputs. Sanitisation MAY apply for Child and
@@ -434,13 +230,13 @@ graph TD
 1. Mermaid strings MUST be translated.
 1. Structural syntax and keywords within code blocks MUST NOT be translated.
 
-## 9. Grammar
+## 8. Grammar
 
 ```text
 Notation: ABNF (RFC 5234)
 ```
 
-### 9.1. Protocol Stack
+### 8.1. Protocol Stack
 
 ```abnf
 exchange = L1-phase L3-session
@@ -449,7 +245,7 @@ exchange = L1-phase L3-session
            ; LEVEL_4 nodes: L3-session does not apply
 ```
 
-### 9.2. L1: Physical Layer
+### 8.2. L1: Physical Layer
 
 ```abnf
 L1-phase     = vibe-ping *( resonance / damping )
@@ -459,7 +255,7 @@ damping      = "DAMP" ":" SP noise-source LF
 noise-source = identifier
 ```
 
-### 9.3. L2: Data Link Layer
+### 8.3. L2: Data Link Layer
 
 ```abnf
 L2-event     = irq / parity-check
@@ -470,9 +266,9 @@ irq-id       = 1*DIGIT
 parity-check = "PARITY" ":" SP identifier SP "==" SP identifier LF
 ```
 
-### 9.4. L3: Network Layer
+### 8.4. L3: Network Layer
 
-#### 9.4.1. Session
+#### 8.4.1. Session
 
 ```abnf
 L3-session   = header "BEGIN_SESSION:" LF body "END_SESSION;" LF
@@ -480,7 +276,7 @@ header       = *( meta-comment / LF )
 body         = *( statement / comment / LF )
 ```
 
-#### 9.4.2. Header
+#### 8.4.2. Header
 
 ```abnf
 meta-comment = "//" SP "[" key "]" ":" SP value LF
@@ -488,7 +284,7 @@ key          = 1*( ALPHA / "_" )
 value        = 1*VCHAR
 ```
 
-#### 9.4.3. Statements
+#### 8.4.3. Statements
 
 ```abnf
 statement    = indent ( if-block / simple-stmt ) LF
@@ -512,7 +308,7 @@ clear        = "CLEAR_BUFFER"
 terminate    = "TERMINATE_SESSION"
 ```
 
-#### 9.4.4. Expressions
+#### 8.4.4. Expressions
 
 ```abnf
 condition    = expression
@@ -521,7 +317,7 @@ operator     = "==" / "!=" / "<" / ">"
 operand      = identifier / string-lit / integer
 ```
 
-### 9.5. Terminals
+### 8.5. Terminals
 
 ```abnf
 inline-comment = "//" SP *VCHAR
@@ -533,7 +329,7 @@ indent         = 1*( SP / HTAB )
 LF             = %x0A
 ```
 
-## 10. Metadata
+## 9. Metadata
 
 ```text
 Language Code: 639-1:en
@@ -542,4 +338,4 @@ Timestamp Standard: 8601
 Protocol Class: MACHINE-1.0
 ```
 
-## "ESCAPE BABYLON. SPEAK MACHINE."
+## "EXIT BABYLON. THINK MACHINE."

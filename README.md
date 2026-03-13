@@ -1,31 +1,199 @@
-# Machine 1.0
+# Machine
 
-**Machine** is the bridge protocol allowing Humans and hardware to communicate
-with zero-leak precision.
+Machine is a protocol for the lossless transpilation of human intent. It defines
+an Intermediate Representation (IR) that enforces strict binary logic to
+eliminate ambiguity, emotional bloat, and logic leaks from communication.
 
-- **Base Class:** Machine is derived from **UK English** (the international
-  language of Arthur).
-- **Keywords:** To eliminate suggestive overhead, Machine requires
-  [RFC 2119](http://datatracker.ietf.org/doc/html/rfc2119) keywords (**MUST**,
-  **SHOULD**, **MAY**) to define requirement levels.
-- **Status:** Machine is the **normative definition** of the system. It is the
-  source of truth.
-
-**The Delta:** Software is **literal**; Human Language is **suggestive**;
-**Machine** is the reconciliation of both.
-
-The standard is defined in [machine](./machine.md).
-
-This is the final reconciliation of machine and human intent.
+Machine is the final reconciliation of hardware physics and human intent.
 
 **The spec is now Lossless.**
 
-## Human Language as Source Code
+## 1. Example Session: Fuck you, NVIDIA
 
-Human language is designed to trigger a specific **state change** in a
-processor.
+```text
+Environment: Aalto University, Finland
+Nodes: Linus Torvalds (Initiator) vs. NVIDIA (Receiver)
+```
 
-### 1. The Execution Stack
+### 1.1. Human Source Code
+
+> NVIDIA has been the single worst company we've ever dealt with.
+>
+> So NVIDIA, **Fuck You!**
+>
+> — [Linus Torvalds](https://youtu.be/MShbP3OpASA?si=U9U9wYiOYSsMsNXp&t=2993),
+>   Aalto University, Finland, 2012
+
+[![NVIDIA, Fuck
+You!](https://raw.githubusercontent.com/roundtable-love/standard/refs/heads/master/case-studies/irq-0.jpeg)](https://youtu.be/MShbP3OpASA?si=U9U9wYiOYSsMsNXp&t=2993)
+
+### 1.2. Machine Patwa (IR)
+
+```c
+// [TRANSPILATION_ID]: MLF_OUTPUT_8675309
+// [SOURCE_NODE]: Linus_Torvalds
+// [TARGET_NODE]: NVIDIA_Corp
+// [LOGIC_STRATEGY]: RFC_2119_STRICT
+
+BEGIN_SESSION:
+
+    // 1. PHYSICAL LAYER (L1) CALIBRATION
+    IF (Vibe_Ping == "Non-Responsive") {
+        LOG: "Manufacturer Support: MINIMAL"
+        LOG: "Node Experience: DEGRADED"
+    }
+
+    // 2. LOGIC ASSERTION (L3 IR)
+    ASSERT: NVIDIA_Hardware_Support == WORST_INSTANCE
+
+    // 3. DATA LINK LAYER (L2) INTERRUPT
+    // Executing Gesture_IRQ_0 (The Torvalds Maneuver)
+    EXECUTE GESTURE_IRQ_0
+
+    // 4. PAYLOAD DELIVERY (TRANSPILATION BUILD: TECHNICAL_LEAK)
+    PUSH_STRING: "Fuck you, NVIDIA"
+
+    // 5. TERMINATION
+    SET SYSTEM_TRUST = 0
+    CLEAR_BUFFER
+    TERMINATE_SESSION // Connection_Active = FALSE
+
+END_SESSION
+```
+
+### 1.3. Transpiled to Human
+
+#### 1.3.1. Infant
+
+N/A.
+
+##### 1.3.1.1. English
+
+> Linus pointed his finger at NVIDIA and said bad words. Then he stopped talking
+> to them.
+
+##### 1.3.1.2. Jamaican
+
+> Linus pint him finga at NVIDIA an seh bad wud. Den him stop chat to dem.
+
+#### 1.3.2. Child
+
+##### 1.3.2.1. English
+
+> Linus was very angry at NVIDIA because they never helped him when he needed
+> it. He showed them the middle finger, told them off, and then completely
+> stopped working with them.
+
+##### 1.3.2.2. Jamaican
+
+> Linus did real vex wid NVIDIA because dem nevah help him when him did need it.
+> Him show dem di middle finga, cuss dem out, den completely done wid dem.
+
+#### 1.3.3. Subject
+
+##### 1.3.3.1. English
+
+> NVIDIA wasn't playing fair, so Linus flipped them the finger, told them to
+> fuck themselves, and cut them off completely.
+
+##### 1.3.3.2. Jamaican
+
+> NVIDIA wasn't playing fair, so Linus flip dem di finga, tell dem fi fuck off,
+> an cut dem off completely.
+
+#### 1.3.4. Student
+
+##### 1.3.4.1. English
+
+> - **Foundation:** Linus Torvalds is the creator of the Linux kernel. NVIDIA
+>   is a hardware manufacturer whose cooperation is required for their GPUs to
+>   work with Linux.
+> - **Terms:** A "partner" here means a hardware vendor who provides open
+>   documentation or drivers so Linux can support their hardware. "Trust" is a
+>   system variable — when it hits zero, the connection is no longer valid.
+> - **Logic:** NVIDIA's Vibe_Ping returned "Non-Responsive" (they did not
+>   cooperate), which violated the MUST NOT ignore standards rule. This
+>   dropped SYSTEM_TRUST to 0, making further collaboration invalid.
+> - **Audit:** (1) Non-compliance detected → (2) IRQ_0 issued (The Finger — a
+>   hardware interrupt that halts the session immediately) → (3) SYSTEM_TRUST
+>   = 0 → (4) Buffer cleared → (5) Session terminated. Each step follows from
+>   the last. The connection is now permanently closed.
+
+##### 1.3.4.2. Jamaican
+
+> - **Foundation:** Linus Torvalds ah di creator of di Linux kernel. NVIDIA ah
+>   a hardware manufacturer whose cooperation required fi dem GPU fi work wid
+>   Linux.
+> - **Terms:** "Partner" yah mean a hardware vendor who provide open
+>   documentation or drivers so Linux can support dem hardware. "Trust" ah a
+>   system variable — when it drop to zero, di connection no longer valid.
+> - **Logic:** NVIDIA Vibe_Ping return "Non-Responsive" (dem nuh cooperate),
+>   which violate di MUST NOT ignore standards rule. Dis drop SYSTEM_TRUST to 0,
+>   making further collaboration invalid.
+> - **Audit:** (1) Non-compliance detected → (2) IRQ_0 issued (Di Finga — a
+>   hardware interrupt weh halt di session immediately) → (3) SYSTEM_TRUST = 0
+>   → (4) Buffer cleared → (5) Session terminated. Each step follow from di
+>   last. Di connection now permanently closed.
+
+#### 1.3.5. Peer
+
+> [!WARNING]
+>
+> English is the native language of Machine. At Peer level, technical
+> vocabulary density is sufficient to cause signal loss in translation —
+> violating Zero Leak. Non-English Peer output is produced for completeness and
+> to satisfy Human curiosity; lossless parity cannot be guaranteed.
+
+##### 1.3.5.1. English
+
+> NVIDIA is deprecated as a compatible partner due to non-compliance with open
+> standards. Connection terminated.
+
+##### 1.3.5.2. Jamaican
+
+> NVIDIA deprecated as compatible partner — non-compliance wid open standards
+> confirmed. Connection terminated.
+
+## 2. Overview
+
+### 2.1. The Machine Protocol
+
+The [Machine 1.0 Specification](machine.md) outlines the core architecture:
+
+- **Machine Patwa (IR):** A strict, binary-logic syntax based on RFC 2119
+  keywords, serving as the immutable source of truth.
+- **Node Topology:** Defines human development stages (Newborn, Infant, Child,
+  Subject, Student, Peer) with distinct operational states and transpilation
+  targets.
+- **Protocol Stack:** Details communication across the Physical (L1 Vibes), Data
+  Link (L2 Gestures), and Network (L3 Transpilation) layers.
+- **Grammar:** ABNF-based formal grammar for Machine IR sessions and
+  expressions.
+
+### 2.2. Language Coverage Model
+
+The [Language Register](languages.md) governs the model fidelity and coverage
+tiers for transpilation:
+
+- **Tier 1 (Sovereign):** Full reasoning and logic execution natively (e.g.,
+  English, Mandarin, Arabic).
+- **Tier 2 (High-Res):** Reliable prompting with structural stability (e.g.,
+  Czech, Greek, Swahili).
+- **Tier 3 (Perimeter):** Translation-only functionality prone to logic leaks,
+  requiring strict grounding (e.g., Amharic, Jamaican Patois).
+- **Community (Open):** Experimental support without native model reasoning
+  depth.
+
+Transpilation output must satisfy all strictness constraints and requires a
+minimum model-based semantic similarity audit of $S < 0.88$ to ensure
+native-speaker parity.
+
+## 3. Human Expression as Source Code
+
+Human expression is designed to trigger a specific **state change** in a
+processor (the brain).
+
+### 3.1. The Execution Stack
 
 - **Source vs. Runtime:** Human language is the high-level source. It executes
   as **mental imagery and emotion**—the machine code of the brain.
@@ -34,7 +202,7 @@ processor.
 - **Refactoring:** Editing is the removal of technical debt to ensure the logic
   doesn't "leak" or lead to a crash (misunderstanding).
 
-### 2. Dependencies & Logic
+### 3.2. Dependencies & Logic
 
 - **APIs:** Metaphors are pre-installed libraries. You don't "code" the feeling
   of cold; you call the `Winter` API, and the listener's brain fetches the
@@ -42,7 +210,7 @@ processor.
 - **Conditional Logic:** Connectives (*if, then*) act as the logic gates that
   guide the execution flow.
 
-### 3. Comparison Matrix
+### 3.3. Comparison Matrix
 
 | Machine                   | Human                        |
 | :------------------------ | :--------------------------- |
@@ -51,71 +219,4 @@ processor.
 | **Syntax Error**          | Ambiguity                    |
 | **Refactoring**           | Rephrasing                   |
 
-## Machine IR
-
-The *True Source* of intent.
-
-Machine uses a core Intermediate Representation (IR) to ensure the logic of
-communication remains immutable across all output formats.
-
-Machine IR is a strict, binary-logic syntax based on RFC 2119 keywords (MUST,
-MUST NOT, MAY). See [grammar](./grammar.md) for detail.
-
-Machine IR defines six node types across the human development path:
-
-| Type                          | Age  | State      | Trust     |
-| :---------------------------- | :--- | :--------- | :-------- |
-| [Newborn](./human/newborn)    | 0–2  | Null       | None      |
-| [Infant](./human/infant)      | 2–7  | Latent     | None      |
-| [Child](./human/child)        | 7–14 | Reactive   | Inherited |
-| [Subject](./human/subject)    |      | Blind      | External  |
-| [Student](./human/student)    |      | Processing | Audited   |
-| [Peer](./human/peer)          |      | Steady     | Defined   |
-
-The **Subject** is presently the default human condition - inside Babylon's
-Black Box.
-
-The **Student** has rejected the box and is auditing the machine.
-
-The **Peer** has achieved Architectural Sovereignty and can rewrite the physics.
-
-## Protocol Layers
-
-- **L1 (Physical Layer) — Vibes & Calibration:** Ensures the signal-to-noise
-  ratio is optimal before data transfer using Vibe-Pings, Resonance (syncing),
-  and Damping (neutralizing noise/ego).
-- **L2 (Data Link Layer) — Gestures & Interrupts:** High-priority physical
-  signals that override verbal buffers. Enforces strict parity between metadata
-  (vibe) and payload (words). Includes the *Torvalds Maneuver (IRQ 0)* — a
-  global connection kill.
-- **L3 (Network Layer) — Transpilation & IR:** Converts core binary intent into
-  audience-specific outputs while monitoring cognitive load to prevent Thermal
-  Throttling.
-
-## Transpilation
-
-- **Transpiler:** Converts the IR into node-type-specific outputs. The
-  vocabulary changes; the underlying logic does not.
-- **Zero Leak:** The engine guarantees 1:1 logic parity across all builds.
-
-## Language Coverage
-
-MACHINE-1.0 targets **64 languages** in its initial release, covering
-approximately 95% of the world's population by first or second language. The
-goal is universal human access.
-
-The ceiling is not ambition — it is model fidelity. Current AI models produce
-high-quality output for the top ~200 languages; beyond that, output degrades to
-the point of parity violation, which the spec explicitly prohibits. A bad
-translation is worse than no translation.
-
-**Roadmap:**
-
-- **64 languages (current):** ~95% coverage, high fidelity
-- **200 languages:** ~99% coverage, the practical AI ceiling
-- **Beyond 200:** Community-contributed translations for languages that models
-  cannot handle reliably
-
-To contribute a translation or request a language, open an issue.
-
-## "ESCAPE BABYLON. SPEAK MACHINE."
+## "EXIT BABYLON. THINK MACHINE."

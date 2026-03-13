@@ -25,7 +25,7 @@ A bad translation is worse than no translation.
 Transpilation MUST satisfy all strictness constraints defined in
 [MACHINE-1.0 §2](https://github.com/roundtable-love/machine/blob/master/machine.md#2-strictness-constraints-normative)
 and
-[MACHINE-1.0 §6](https://github.com/roundtable-love/machine/blob/master/machine.md#7-rules-normative).
+[MACHINE-1.0 §7](https://github.com/roundtable-love/machine/blob/master/machine.md#7-rules-normative).
 
 A transpilation output MUST additionally be rejected if it fails a
 native-speaker parity check or a model-based semantic similarity audit
