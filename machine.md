@@ -282,7 +282,7 @@ END_SESSION;
 
 ```mermaid
 graph TD
-    A[Human Source Code] -->|1. Source| B[Machine Lingua Franca IR 1.0]
+    A[Human Source Code] -->|1. Source| B[Machine IR 1.0]
     B -->|2. Transpile| C(Target Output)
     C -.->|Cognitive Load| G[Vibe Layer]
     G -->|Calibration| B
