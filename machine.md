@@ -59,7 +59,7 @@ Machine uses a core Intermediate Representation (IR) to ensure the logic of
 communication remains immutable across all output formats.
 
 Machine IR is a strict, binary-logic syntax based on RFC 2119 keywords (MUST,
-MUST NOT, MAY). See [grammar](./grammar.md) for detail.
+MUST NOT, MAY). See [Grammar](#9-grammar) for detail.
 
 Machine IR defines six node types across the human development path:
 
@@ -434,7 +434,106 @@ graph TD
 1. Mermaid strings MUST be translated.
 1. Structural syntax and keywords within code blocks MUST NOT be translated.
 
-## 9. Metadata
+## 9. Grammar
+
+```text
+Notation: ABNF (RFC 5234)
+```
+
+### 9.1. Protocol Stack
+
+```abnf
+exchange = L1-phase L3-session
+           ; L2 events are async — MAY interrupt L3 at any point
+           ; LEVEL_5 nodes: L3-session does not apply
+           ; LEVEL_4 nodes: L3-session does not apply
+```
+
+### 9.2. L1: Physical Layer
+
+```abnf
+L1-phase     = vibe-ping *( resonance / damping )
+vibe-ping    = "VIBE_PING" ":" SP string-lit LF
+resonance    = "SYN" LF
+damping      = "DAMP" ":" SP noise-source LF
+noise-source = identifier
+```
+
+### 9.3. L2: Data Link Layer
+
+```abnf
+L2-event     = irq / parity-check
+irq          = "IRQ_" irq-id LF
+irq-id       = 1*DIGIT
+               ; IRQ_0: global kill — HALT_AND_CATCH_FIRE
+               ;        clears buffer, sets Connection_Active = FALSE
+parity-check = "PARITY" ":" SP identifier SP "==" SP identifier LF
+```
+
+### 9.4. L3: Network Layer
+
+#### 9.4.1. Session
+
+```abnf
+L3-session   = header "BEGIN_SESSION:" LF body "END_SESSION;" LF
+header       = *( meta-comment / LF )
+body         = *( statement / comment / LF )
+```
+
+#### 9.4.2. Header
+
+```abnf
+meta-comment = "//" SP "[" key "]" ":" SP value LF
+key          = 1*( ALPHA / "_" )
+value        = 1*VCHAR
+```
+
+#### 9.4.3. Statements
+
+```abnf
+statement    = indent ( if-block / simple-stmt ) LF
+simple-stmt  = core-stmt ";" [ SP inline-comment ]
+core-stmt    = log
+             / assert
+             / execute
+             / push-string
+             / set
+             / clear
+             / terminate
+if-block     = "IF" SP "(" condition ")" SP "{" LF
+               body
+               indent "}"
+log          = "LOG:" SP string-lit
+assert       = "ASSERT:" SP expression
+execute      = "EXECUTE" SP identifier
+push-string  = "PUSH_STRING:" SP string-lit
+set          = "SET" SP identifier SP "=" SP operand
+clear        = "CLEAR_BUFFER"
+terminate    = "TERMINATE_SESSION"
+```
+
+#### 9.4.4. Expressions
+
+```abnf
+condition    = expression
+expression   = operand SP operator SP operand
+operator     = "==" / "!=" / "<" / ">"
+operand      = identifier / string-lit / integer
+```
+
+### 9.5. Terminals
+
+```abnf
+inline-comment = "//" SP *VCHAR
+comment        = indent inline-comment LF
+string-lit     = DQUOTE *( %x20-21 / %x23-7E ) DQUOTE
+identifier     = 1*( ALPHA / DIGIT / "_" )
+integer        = [ "-" ] 1*DIGIT
+indent         = 1*( SP / HTAB )
+LF             = %x0A
+```
+
+## 10. Metadata
 
 ```text
 Language Code: 639-1:en
