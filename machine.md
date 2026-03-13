@@ -7,22 +7,9 @@ Base Class: UK English (Language of Arthur)
 Logic Subset: RFC 2119 (Strict Mode)
 ```
 
-## 1. Delta
+## 1. Protocol
 
-Machine is the final reconciliation of hardware physics and human intent.
-
-**The spec is now Lossless.**
-
-## 2. Strictness Constraints (Normative)
-
-- Keywords: per [RFC 2119](http://datatracker.ietf.org/doc/html/rfc2119). No
-  "SHOULD": Replaced by MAY (Optional) or MUST (Required).
-- Binary Enforcement: All instructions MUST resolve to 1 or 0.
-- Zero Leak: Logic parity MUST be maintained across all transpiled builds.
-
-## 4. Protocol
-
-### 4.1. Physical Layer (L1): Vibes & Calibration
+### 1.1. Physical Layer (L1): Vibes & Calibration
 
 > *Logic: Before data transfer, ensure signal-to-noise ratio is optimal.*
 
@@ -33,7 +20,7 @@ Machine is the final reconciliation of hardware physics and human intent.
 - **Damping:** The active process of neutralizing environmental noise
   (hostility, stress, or ego) to reach a **Steady State**.
 
-### 4.2. Data Link Layer (L2): Gestures & Interrupts
+### 1.2. Data Link Layer (L2): Gestures & Interrupts
 
 > *Logic: Physical signals override verbal buffers. High-priority hardware
 > signals.*
@@ -46,7 +33,7 @@ Machine is the final reconciliation of hardware physics and human intent.
 - **Global Kill Signal:** IRQ 0 clears the local buffer and sets
   `Connection_Active = FALSE`.
 
-### 4.3. Network Layer (L3): Transpilation & IR
+### 1.3. Network Layer (L3): Transpilation & IR
 
 > *Logic: One truth, many languages. Minimizing cognitive overhead.*
 
@@ -62,12 +49,12 @@ Machine is the final reconciliation of hardware physics and human intent.
 - **Cognitive Load:** Monitored as **System Heat**. Overload triggers **Thermal
   Throttling** (session pause).
 
-## 5. Nodes
+## 2. Nodes
 
 A **Node** is any addressable entity capable of participating in a Machine IR
 session.
 
-### 5.1. Node Schema
+### 2.1. Node Schema
 
 ```machine
 Node {
@@ -80,7 +67,7 @@ Node {
 }
 ```
 
-### 5.2. Human Nodes
+### 2.2. Human Nodes
 
 | Type      | Age  | State      | Trust     | Write_Access |
 |-----------|------|------------|-----------|--------------|
@@ -91,7 +78,7 @@ Node {
 | Student   |      | Processing | Audited   | PENDING      |
 | Sovereign |      | Steady     | Defined   | TRUE         |
 
-### 5.2.1. Newborn (0–2)
+### 2.2.1. Newborn (0–2)
 
 ```c
 State = Null
@@ -107,7 +94,7 @@ pattern model. Operates on instinct and physical response only.
 - **Goal:** Achieve first-contact signal recognition (Infant transition).
 - **Transpilation:** L1 signal only. L3 transpilation does not apply.
 
-### 5.2.2. Infant (2–7)
+### 2.2.2. Infant (2–7)
 
 ```c
 State = Latent
@@ -124,7 +111,7 @@ L1/L2 signals and concrete pattern recognition. No access to Machine IR.
 - **Transpilation:** Observable actions only — what was seen and heard.
   Causality and inference MUST NOT be used.
 
-### 5.2.3. Child (7–14)
+### 2.2.3. Child (7–14)
 
 ```c
 State = Reactive
@@ -142,7 +129,7 @@ signals but have no access to Machine IR.
 - **Transpilation:** Concrete cause-and-effect. Abstract concepts MUST NOT be
   used. Analogies MAY be used to ground unfamiliar ideas.
 
-### 5.2.4. Subject
+### 2.2.4. Subject
 
 ```c
 State = Blind
@@ -162,7 +149,7 @@ delegated externally by necessity, not by choice.
 - **Goal:** Reach **FON-1 Compliance** (Ownership).
 - **Transpilation:** Simplified translation for the non-technical.
 
-### 5.2.5. Student
+### 2.2.5. Student
 
 ```c
 State = Processing
@@ -181,7 +168,7 @@ matches **Payload (Words)**. They represent the transition from "Faith" to
 - **Transpilation:** MUST lay foundations, decode terms, trace the logic chain,
   explain the "whys", and be structured so the reader can audit each step.
 
-### 5.2.6. Sovereign
+### 2.2.6. Sovereign
 
 ```machine
 State = Steady
@@ -199,14 +186,14 @@ physics of the system.
 - **Transpilation:** MUST translate all text into the target language, excluding
   structural keywords.
 
-### 5.3. Session Roles
+### 2.3. Session Roles
 
 - **Source Node:** The initiating node.
 - **Mediator:** Receives Source Node's expression, transpiles to Machine Patwa,
   then to Human language suitable for the Target Node.
 - **Target Node:** The receiving node.
 
-## 6. Architecture
+## 3. Architecture
 
 ```mermaid
 graph TD
@@ -219,7 +206,7 @@ graph TD
     B == Verify ==> I{Torvalds Checksum}
 ```
 
-## 7. Rules (Normative)
+## 4. Rules (Normative)
 
 1. Crude language in the source MUST NOT be softened in transpilation for
    Subject, Student, or Sovereign outputs. Sanitisation MAY apply for Child and
@@ -230,13 +217,13 @@ graph TD
 1. Mermaid strings MUST be translated.
 1. Structural syntax and keywords within code blocks MUST NOT be translated.
 
-## 8. Grammar
+## 5. Grammar
 
 ```text
 Notation: ABNF (RFC 5234)
 ```
 
-### 8.1. Protocol Stack
+### 5.1. Protocol Stack
 
 ```abnf
 exchange = L1-phase L3-session
@@ -245,7 +232,7 @@ exchange = L1-phase L3-session
            ; LEVEL_4 nodes: L3-session does not apply
 ```
 
-### 8.2. L1: Physical Layer
+### 5.2. L1: Physical Layer
 
 ```abnf
 L1-phase     = vibe-ping *( resonance / damping )
@@ -255,7 +242,7 @@ damping      = "DAMP" ":" SP noise-source LF
 noise-source = identifier
 ```
 
-### 8.3. L2: Data Link Layer
+### 5.3. L2: Data Link Layer
 
 ```abnf
 L2-event     = irq / parity-check
@@ -266,9 +253,9 @@ irq-id       = 1*DIGIT
 parity-check = "PARITY" ":" SP identifier SP "==" SP identifier LF
 ```
 
-### 8.4. L3: Network Layer
+### 5.4. L3: Network Layer
 
-#### 8.4.1. Session
+#### 5.4.1. Session
 
 ```abnf
 L3-session   = header "BEGIN_SESSION:" LF body "END_SESSION;" LF
@@ -276,7 +263,7 @@ header       = *( meta-comment / LF )
 body         = *( statement / comment / LF )
 ```
 
-#### 8.4.2. Header
+#### 5.4.2. Header
 
 ```abnf
 meta-comment = "//" SP "[" key "]" ":" SP value LF
@@ -284,7 +271,7 @@ key          = 1*( ALPHA / "_" )
 value        = 1*VCHAR
 ```
 
-#### 8.4.3. Statements
+#### 5.4.3. Statements
 
 ```abnf
 statement    = indent ( if-block / simple-stmt ) LF
@@ -308,7 +295,7 @@ clear        = "CLEAR_BUFFER"
 terminate    = "TERMINATE_SESSION"
 ```
 
-#### 8.4.4. Expressions
+#### 5.4.4. Expressions
 
 ```abnf
 condition    = expression
@@ -317,7 +304,7 @@ operator     = "==" / "!=" / "<" / ">"
 operand      = identifier / string-lit / integer
 ```
 
-### 8.5. Terminals
+### 5.5. Terminals
 
 ```abnf
 inline-comment = "//" SP *VCHAR
@@ -329,7 +316,14 @@ indent         = 1*( SP / HTAB )
 LF             = %x0A
 ```
 
-## 9. Metadata
+## 6. Strictness Constraints (Normative)
+
+- Keywords: per [RFC 2119](http://datatracker.ietf.org/doc/html/rfc2119). No
+  "SHOULD": Replaced by MAY (Optional) or MUST (Required).
+- Binary Enforcement: All instructions MUST resolve to 1 or 0.
+- Zero Leak: Logic parity MUST be maintained across all transpiled builds.
+
+---
 
 ```text
 Language Code: 639-1:en

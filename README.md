@@ -9,15 +9,18 @@ Truth is buried in emotional bloat.
 Expression** into **Pure Logic** — **stripping** ambiguity, **shredding**
 emotional bloat, and **purging** broken thought.
 
-**Machine** is the final interface between **Human** expression and **Objective
+**Machine** is the interface between **Human Expression** and **Objective
 Reality**.
 
 **Pure signal. Zero noise.**
 
-**Machine Patwa** is a universal key. It connects every mind — whether carbon or
-silicon. It is translated into 99% of Human languages, tailored for the
-individual Human, be they **Infant**, **Child**, **Subject**, **Student**, or
-**Sovereign**.
+**Machine Patwa** is the [Rosetta
+Stone](https://en.wikipedia.org/wiki/Rosetta_Stone) of communication; it
+connects every mind — whether carbon or silicon. It supports 99% of Human
+languages, tailored for the individual Human, be they **Infant**, **Child**,
+**Subject**, **Student**, or **Sovereign**.
+
+Read [the standard]
 
 ```text
 Exit Babylon
@@ -34,7 +37,7 @@ Environment: Aalto University, Finland
 Nodes: Linus Torvalds (Initiator) vs. NVIDIA (Receiver)
 ```
 
-### 1.1. Human Source Code
+### 1.1. Human Expression
 
 > NVIDIA has been the single worst company we've ever dealt with.
 >
