@@ -1,126 +1,136 @@
-# [ARCHIVE_COMMIT] Machine: Language Register 1.0
+# Machine: Language Register 1.0
 
 ```text
 Status: DRAFT
 UID: MACHINE-LANGUAGES-1.0
-Base: Machine 1.0 (MACHINE-1.0)
+Base: MACHINE-1.0
 ```
 
 ## 1. Coverage Model
 
-The goal of MACHINE-1.0 is universal human access. The ceiling is not ambition —
+The goal of Machine is universal human access. The ceiling is not ambition —
 it is model fidelity. AI-generated transpilation degrades for under-resourced
 languages to the point of parity violation, which the spec explicitly prohibits.
 A bad translation is worse than no translation.
 
-| Tier | Languages | Coverage | Status  |
-|------|-----------|----------|---------|
-| 1    | 64        | ~95%     | Current |
-| 2    | 200       | ~99%     | Roadmap |
-| 3    | Community | Remainder| Open    |
-
-**Tier 3** covers languages that AI models cannot handle with sufficient
-fidelity. Community-contributed translations are accepted for these languages
-provided they pass a native-speaker parity audit.
+| Tier | Name | Selection Logic (Model Support) | Coverage | Status |
+| :--- | :--- | :--- | :--- | :--- |
+| **1** | **Sovereign** | Full Reasoning, Tool Use, & Code Execution | ~78% | **Current** |
+| **2** | **High-Res** | Reliable Prompting & Logical Consistency | ~12% | **Current** |
+| **3** | **Perimeter** | Translation-Only / Semantic Comprehension | ~5% | **Current** |
+| **Community** | **Open** | No Native Model Reasoning Depth | Remainder | Open |
 
 ## 2. Fidelity Constraints (Normative)
 
-Per §2 of MACHINE-1.0: Zero Leak — logic parity SHALL be maintained across all
-transpiled builds.
+Transpilation MUST satisfy all strictness constraints defined in
+[MACHINE-1.0 §2](https://github.com/roundtable-love/machine/blob/master/machine.md#2-strictness-constraints-normative)
+and
+[MACHINE-1.0 §6](https://github.com/roundtable-love/machine/blob/master/machine.md#7-rules-normative).
 
-A transpilation output MUST be rejected if:
+A transpilation output MUST additionally be rejected if it fails a
+native-speaker parity check or a model-based semantic similarity audit
+($S < 0.88$).
 
-- Key terms are untranslated due to model failure.
-- RFC 2119 keywords are mistranslated or omitted.
-- Structural keywords within code blocks are altered.
-- The output fails a native-speaker parity check.
+## 3. Tier 1: Sovereign
 
-Peer output in non-English languages carries an inherent risk of signal loss due
-to the English-native density of Machine IR vocabulary. See §4.2.6 of
-MACHINE-1.0.
+*Nodes capable of native logic execution and instruction following without
+internal pivot-language translation.*
 
-## 3. Language Register (Normative)
+| Language | ISO Code |
+| :--- | :--- |
+| العربية الفصحى (Arabic, Modern Standard) | `ar` |
+| مصري (Arabic, Egyptian) | `arz` |
+| বাংলা (Bengali) | `bn` |
+| 廣東話 (Chinese, Cantonese) | `yue` |
+| 中文 (Chinese, Mandarin) | `zh` |
+| English | `en` |
+| فارسی (Farsi/Persian) | `fa` |
+| Français (French) | `fr` |
+| Deutsch (German) | `de` |
+| ગુજરાતી (Gujarati) | `gu` |
+| עברית (Hebrew) | `he` |
+| हिन्दी (Hindi) | `hi` |
+| Bahasa Indonesia (Indonesian) | `id` |
+| Italiano (Italian) | `it` |
+| 日本語 (Japanese) | `ja` |
+| ಕನ್ನಡ (Kannada) | `kn` |
+| 한국어 (Korean) | `ko` |
+| മലയാളം (Malayalam) | `ml` |
+| मराठी (Marathi) | `mar` |
+| Polski (Polish) | `pl` |
+| Português (Portuguese) | `pt` |
+| Română (Romanian) | `ro` |
+| Русский (Russian) | `ru` |
+| Español (Spanish) | `es` |
+| தமிழ் (Tamil) | `ta` |
+| తెలుగు (Telugu) | `te` |
+| ภาษาไทย (Thai) | `th` |
+| Türkçe (Turkish) | `tr` |
+| Українська (Ukrainian) | `uk` |
+| اردو (Urdu) | `ur` |
+| Tiếng Việt (Vietnamese) | `vi` |
 
-64 languages. Sorted alphabetically by English name.
+## 4. Tier 2: High-Res
 
-<!-- prettier-ignore-start -->
-| Code  | English          | Native            |
-|-------|------------------|-------------------|
-| `am`  | Amharic          | አማርኛ              |
-| `ar`  | Arabic           | العربية            |
-| `az`  | Azerbaijani      | Azərbaycan dili   |
-| `bn`  | Bengali          | বাংলা              |
-| `my`  | Burmese          | မြန်မာဘာသာ         |
-| `ca`  | Catalan          | Català            |
-| `ceb` | Cebuano          | Bisaya            |
-| `zh`  | Chinese          | 中文               |
-| `cs`  | Czech            | Čeština           |
-| `da`  | Danish           | Dansk             |
-| `nl`  | Dutch            | Nederlands        |
-| `en`  | English          | English           |
-| `fi`  | Finnish          | Suomi             |
-| `fr`  | French           | Français          |
-| `de`  | German           | Deutsch           |
-| `el`  | Greek            | Ελληνικά          |
-| `gu`  | Gujarati         | ગુજરાતી            |
-| `ha`  | Hausa            | Hausa             |
-| `he`  | Hebrew           | עברית             |
-| `hi`  | Hindi            | हिन्दी             |
-| `hu`  | Hungarian        | Magyar            |
-| `ig`  | Igbo             | Igbo              |
-| `id`  | Indonesian       | Bahasa Indonesia  |
-| `it`  | Italian          | Italiano          |
-| `jam` | Jamaican Creole  | Patwa             |
-| `ja`  | Japanese         | 日本語              |
-| `jv`  | Javanese         | Basa Jawa         |
-| `kn`  | Kannada          | ಕನ್ನಡ              |
-| `km`  | Khmer            | ភាសាខ្មែរ           |
-| `ko`  | Korean           | 한국어              |
-| `ku`  | Kurdish          | Kurdî             |
-| `mg`  | Malagasy         | Malagasy          |
-| `ms`  | Malay            | Bahasa Melayu     |
-| `ml`  | Malayalam        | മലയാളം             |
-| `mr`  | Marathi          | मराठी              |
-| `ne`  | Nepali           | नेपाली             |
-| `no`  | Norwegian        | Norsk             |
-| `or`  | Odia             | ଓଡ଼ିଆ              |
-| `om`  | Oromo            | Afaan Oromoo      |
-| `ps`  | Pashto           | پښتو              |
-| `fa`  | Persian          | فارسی             |
-| `pl`  | Polish           | Polski            |
-| `pt`  | Portuguese       | Português         |
-| `pa`  | Punjabi          | ਪੰਜਾਬੀ             |
-| `ro`  | Romanian         | Română            |
-| `ru`  | Russian          | Русский           |
-| `sd`  | Sindhi           | سنڌي              |
-| `si`  | Sinhala          | සිංහල             |
-| `so`  | Somali           | Soomaali          |
-| `es`  | Spanish          | Español           |
-| `su`  | Sundanese        | Basa Sunda        |
-| `sw`  | Swahili          | Kiswahili         |
-| `sv`  | Swedish          | Svenska           |
-| `tl`  | Tagalog          | Tagalog           |
-| `ta`  | Tamil            | தமிழ்              |
-| `te`  | Telugu           | తెలుగు             |
-| `th`  | Thai             | ภาษาไทย           |
-| `tr`  | Turkish          | Türkçe            |
-| `uk`  | Ukrainian        | Українська        |
-| `ur`  | Urdu             | اردو              |
-| `uz`  | Uzbek            | Oʻzbek tili       |
-| `vi`  | Vietnamese       | Tiếng Việt        |
-| `yo`  | Yoruba           | Yorùbá            |
-| `zu`  | Zulu             | isiZulu           |
-<!-- prettier-ignore-end -->
+*Nodes verified for reliable prompting and structural stability.*
 
-## 4. Rules (Normative)
+| Language | ISO Code |
+| :--- | :--- |
+| 吴语 (Chinese, Wu) | `wuu` |
+| Čeština (Czech) | `cs` |
+| Ελληνικά (Greek) | `el` |
+| هَوُسَ (Hausa) | `ha` |
+| Magyar (Hungarian) | `hu` |
+| Igbo | `ig` |
+| Basa Jawa (Javanese) | `jv` |
+| Naijá (Nigerian Pidgin) | `pcm` |
+| پنجابی (Punjabi, Western) | `pnb` |
+| Kiswahili (Swahili) | `sw` |
+| Tagalog | `tl` |
+| Yorùbá (Yoruba) | `yo` |
 
-1. Languages MUST be sorted alphabetically by their English name.
+## 5. Tier 3: Perimeter
+
+*Nodes functional for translation but prone to logic leaks; requires strict
+grounding.*
+
+| Language | ISO Code |
+| :--- | :--- |
+| አማርኛ (Amharic) | `am` |
+| عربي سوداني (Arabic, Sudanese) | `apd` |
+| Azərbaycan (Azerbaijani) | `az` |
+| भोजपुरी (Bhojpuri) | `bho` |
+| မြန်မာ (Burmese) | `my` |
+| 客家話 (Chinese, Hakka) | `hak` |
+| 晉語 (Chinese, Jin) | `cjy` |
+| 閩南語 (Chinese, Min Nan) | `nan` |
+| Fulfulde (Fula) | `ff` |
+| Patwa (Jamaican Patois) | `jam` |
+| ភាសាខ្មែរ (Khmer) | `km` |
+| Ikinyarwanda (Kinyarwanda) | `rw` |
+| मगही (Magahi) | `mag` |
+| मैथिली (Maithili) | `mai` |
+| ଓଡ଼ିଆ (Oriya) | `or` |
+| Oromoo (Oromo) | `om` |
+| پښتو (Pashto) | `ps` |
+| Runasimi (Quechua) | `qu` |
+| سنڌي (Sindhi) | `sd` |
+| Soomaali (Somali) | `so` |
+| Basa Sunda (Sundanese) | `su` |
+| Oʻzbek (Uzbek) | `uz` |
+| isiZulu (Zulu) | `zu` |
+
+## 6. Rules (Normative)
+
+1. Languages MUST be sorted alphabetically by their English name within each
+   Tier section.
 1. ISO 639-1 codes MUST be used where they exist. ISO 639-3 MAY be used for
-   languages without a 639-1 code (e.g., `jam`, `ceb`).
-1. New languages MUST be added in alphabetical order by English name.
-1. `bin/transpile` MUST derive its supported language list from this file.
+   languages without a 639-1 code.
+1. New languages MUST be added in alphabetical order by English name to the
+   appropriate Tier.
+1. `bin/transpile` MUST derive its supported language list from these tables.
 
-## 5. Metadata
+---
 
 ```text
 Language Code: 639-1:en
