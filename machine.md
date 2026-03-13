@@ -209,15 +209,15 @@ Nodes: Linus Torvalds (Initiator) vs. NVIDIA (Receiver)
 
 ### 5.1 Human Source
 
-[![NVIDIA, Fuck
-You!](https://raw.githubusercontent.com/roundtable-love/standard/refs/heads/master/case-studies/irq-0.jpeg)](https://youtu.be/MShbP3OpASA?si=U9U9wYiOYSsMsNXp&t=2993)
-
 > NVIDIA has been the single worst company we've ever dealt with.
 >
 > So NVIDIA, **Fuck You!**
 >
 > — [Linus Torvalds](https://youtu.be/MShbP3OpASA?si=U9U9wYiOYSsMsNXp&t=2993),
 >   Aalto University, Finland, 2012
+
+[![NVIDIA, Fuck
+You!](https://raw.githubusercontent.com/roundtable-love/standard/refs/heads/master/case-studies/irq-0.jpeg)](https://youtu.be/MShbP3OpASA?si=U9U9wYiOYSsMsNXp&t=2993)
 
 ### 5.2 Machine IR
 
