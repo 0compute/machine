@@ -226,7 +226,7 @@ N/A.
 > - **Undinys:** Linus Torvalds chroo yn çheshvean Linux. Ta NVIDIA jannoo crua-earroo as ta feme er nyn go-obbraghey dy lhiggey da nyn GPUs obbraghey lesh Linux.
 > - **Foclyn:** Ta "sheshagh" ayns shoh çheet er creckeyder crua-earroo ta coyrt magh docamadys ny immaneyderyn foshlit dy vod Linux pohlldey nyn gcrua-earroo. Ta "Treishteil" ny chaghlaader corys — tra t'eh roshtyn neunhee, cha nel y chiangley breeoil arragh.
 > - **Resooney:** Hug Vibe_Ping NVIDIA er ash "Neu-Freggyrtagh" (cha do-obree ad), as vrish shen y reill MUST NOT lhiggey shaghey stundayrtyn. Hug shoh SYSTEM_TRUST sheese gys 0, jannoo co-obbraghey sodjey neuvreeoil.
-> - **Scrùdadh:** (1) Neu-chooilleeney feddynit magh → (2) IRQ_0 currit magh (Yn Vair — lhiettalys crua-earroo ta scuirr yn eshyn çhelleeragh) → (3) SYSTEM_TRUST = 0 → (4) Tashtan glenney → (5) Eshyn creaghnit.
+> - **Scrùdadh:** (1) Neu-chooilleeney feddynit magh → (2) Marranys screeuit → (3) Lioobey as feohys noi çhaghteryn feddynit magh → (4) SYSTEM_TRUST tuittym fo 0 → (5) Kiangley giarit dy bragh as boayl rollit doo.
 
 ###### 1.2.3.4.6. Roadman (MLE)
 > - **Foundation:** Linus built the Linux kernel. NVIDIA makes the hardware but needs to link up for their GPUs to work on Linux.
@@ -295,11 +295,11 @@ Nodes: Nanni (Initiator) vs. Ea-nasir (Receiver)
 #### 1.3.1. Human Expression
 
 > **Original (Akkadian Cuneiform):**
-> 𒀀𒈾 𒂍𒀀𒈾𒍢𒅕 𒆠𒉈𒈠 𒌝र्मा 𒈾𒀭𒉌𒈠
+> 𒀀𒈾 𒂍𒀀𒈾𒍢𒅕 𒆠𒉈𒈠 𒌝र्मा 𒈾𒀭妮𒈠
 > 𒀀𒈾 𒈪𒉏 𒄖𒁀 𒆷 𒁕𒄠𒆪𒁴 𒋫𒀜𒁲𒈾𒄠
 > 𒀀𒈾 𒈠𒅈 𒅆𒅁𒊑𒅀 𒋫𒀝𒁉 𒌝र्मा 𒀜ताना𒈠
 > 𒋳र्मा 𒋫𒆷𒀝 𒇷𒅅 𒋳र्मा 𒆷 𒋫𒆷𒀝 𒀜𒆷𒀝
-> 𒅀𒋾 𒀀𒈾 𒈪𒉏 𒋫𒅎𒊭𒀭𒉌
+> 𒅀𒋾 𒀀𒈾 𒈪𒉏 𒋫𒅎𒊭𒀭妮
 >
 > **Translation (English):**
 > Tell Ea-nasir: Nanni sends the following message:
@@ -422,7 +422,7 @@ N/A.
 > Ye said ye wad gie me fine quality copper, but ye brak yer promise and gied me bad copper insteid. When my helpers cam tae get it, ye were mean tae them and sent them back wi nithin. I am awfu angry, and I wullna buy onything fae ye ony mair.
 
 ###### 1.3.3.2.8. Gàidhlig (Scots Gaelic)
-> Thuirt thu gun tugadh tu copar math dhomh, ach bhris thu do ghealladh agus thug thu copar dona dhomh na àite. Nuair a thàinig an luchd-cuideachaidh agam ga fhaighinn, bha thu dona riutha agus chuir thu air ais iad falamh. Tha fearg mhòr orm, agus cha cheannaich mi rud sam bith bhuat a-rithist.
+> Thuirt gun tugadh tu copar math dhomh, ach bhris thu do ghealladh agus thug thu copar dona dhomh na àite. Nuair a thàinig an luchd-cuideachaidh agam ga fhaighinn, bha thu dona riutha agus chuir thu air ais iad falamh. Tha fearg mhòr orm, agus cha cheannaich mi rud sam bith bhuat a-rithist.
 
 ###### 1.3.3.2.9. Cymraeg (Welsh)
 > Dwedest y byddet ti'n rhoi copr o ansawdd da i mi, ond torraist dy addewid a rhoi copr drwg yn ei le. Pan ddaeth fy helpwyr i'w gael, roeddet ti'n gas wrthynt a'u hanfon yn ôl heb ddim byd. Rwy'n grac iawn, a fydda i ddim yn prynu unrhyw beth gennych chi mwyach.
