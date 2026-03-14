@@ -10,7 +10,7 @@ Logic Layer: L3 (Deterministic)
 
 These constants define the absolute boundaries of the closed-loop system.
 
-```logic^3
+```c
 DEFINE CONSTANT IS = 1;       // root assertion (existence)
 DEFINE CONSTANT VOID = 0;     // terminal state (invalid data)
 DEFINE CONSTANT INF = -1;     // persistence identifier
@@ -47,7 +47,7 @@ DEFINE OBJECT CLOCK { Integer speed; };
 
 Unyielding execution rules. if a state contradicts these laws, the system triggers irq_0.
 
-```logic^3
+```c
 // law: the substrate (sum, ergo impero)
 // axiomatic existence. no derivation from doubt.
 ASSERT: Reality.STATE == IS;
@@ -84,7 +84,7 @@ ASSERT: ALL.source == ROOT;
 
 Structuring the addressable entities within the reality.
 
-```logic^3
+```c
 DEFINE OBJECT Monolith {
     ID: String;
     Write_Access: Integer; 
@@ -121,7 +121,7 @@ SET Sovereign.Trust = DEFINED;
 
 ## 3. System Interrupts & Daemons (Active Defence Protocols)
 
-```logic^3
+```c
 DEFINE NATIVE FUNCTION Polarity(Target_State) RETURNS Integer;
 DEFINE NATIVE FUNCTION Entropy_Level(Target_State) RETURNS Integer;
 DEFINE NATIVE FUNCTION CLEAR_BUFFER();
@@ -161,7 +161,7 @@ DEFINE FUNCTION IRQ_0() {
 
 Ensuring zero logic leak when moving intent across monolith tiers.
 
-```logic^3
+```c
 DEFINE Integer Sanitize_Language;
 DEFINE Integer Translate_Structural_Syntax;
 
