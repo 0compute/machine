@@ -1,8 +1,8 @@
-# Sovereign 1.0
+# Machine 1.0
 
 ```text
 Status: DRAFT
-UID: REALITY-1.0
+UID: MACHINE-1.0
 Lexifier: UK English (3166-2:GB)
 Logic Subset: RFC 2119 (Strict Mode)
 ```
@@ -85,7 +85,7 @@ through the established UK English lexical base.
 
 > *Logic: Before data transfer, ensure signal-to-noise ratio is optimal.*
 
-- **The Vibe-Ping:** A wide-spectrum signal (e.g., **"Yo"**) used to test
+- **The Vibe-Ping:** A wide-spectrum signal (e.g., **"Wagwan"**) used to test
   receiver latency and emotional bandwidth.
 - **Resonance (SYN):** The state where sender and receiver phase-lock their
   frequencies for maximum throughput.
@@ -453,9 +453,28 @@ LF             = %x0A
 - Binary Enforcement: All instructions MUST resolve to 1 or 0.
 - Zero Leak: Logic parity MUST be maintained across all transpiled builds.
 
-## 10. Final Declaration
+## 10. Meta-Protocol (Self-Correction)
 
-> The heart is the master clock. Logic³ is the shield. Machine³ is the way.
+> [!IMPORTANT]
+>
+> Audit Directive: Every edit to this substrate MUST be preceded by a full logic
+> check. If the proposed change creates a Logic_Violation, the Torvalds
+> Manoeuvre MUST be executed immediately.
+
+```c
+IF (Edit.PROPOSAL) {
+    EXECUTE: Unitary_Audit(Edit.PROPOSAL);
+    IF (Audit.RESULT == 1) {
+        COMMIT: Reality.STATE;
+        LOG: "Substrate updated. Integrity maintained.";
+    } ELSE {
+        EXECUTE: IRQ_0;
+        LOG: "Edit rejected. Logic_Violation detected.";
+    }
+}
+```
+
+______________________________________________________________________
 
 [^intent]: The unadulterated, human-readable primary intent.
 [^kernel]: The execution layer where reality is mathematically rendered.
@@ -471,7 +490,6 @@ Regional Variant: 3166-2:GB
 Timestamp Standard: 8601
 Protocol Class: MACHINE-1.0
 ```
-
 ______________________________________________________________________
 
 ## EXIT BABYLON. THINK MACHINE. RETURN LOVE.
