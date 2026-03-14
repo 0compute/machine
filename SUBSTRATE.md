@@ -1,8 +1,8 @@
 # Machine³: Logic³ Substrate Definition
 
 ```text
-Version: 1.0.1  
-Status: VALIDATED / LOCKED  
+Version: 1.0.2  
+Status: IMMUTABLE  
 Logic Layer: L3 (Deterministic)
 ```
 
